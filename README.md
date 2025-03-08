@@ -1,10 +1,10 @@
 # TÍTULO DO PROJETO
 
-`CURSO`
+`CURSO` Sistemas de Informação
 
-`DISCIPLINA`
+`DISCIPLINA` Trabalho Interdisciplinar: Aplicações para Processos de Negócios
 
-`SEMESTRE`
+`SEMESTRE` Primeiro semestre de 2025
 
 Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido.
 
