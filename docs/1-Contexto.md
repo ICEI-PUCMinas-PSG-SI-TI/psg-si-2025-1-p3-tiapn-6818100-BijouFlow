@@ -20,22 +20,22 @@ Estes por sua vez, irão conseguir com a utilização da aplicação alterar o s
 
 
 ## Objetivos
-
-Aqui você deve descrever os objetivos do trabalho indicando que o objetivo geral é desenvolver um software para solucionar o problema apresentado acima. 
-
-Apresente também alguns (pelo menos 2) objetivos específicos dependendo de onde você vai querer concentrar a sua prática investigativa, ou como você vai aprofundar no seu trabalho.
  
-> **Links Úteis**:
-> - [Objetivo geral e objetivo específico: como fazer e quais verbos utilizar](https://blog.mettzer.com/diferenca-entre-objetivo-geral-e-objetivo-especifico/)
+- Objetivo Geral
+
+O objetivo geral deste trabalho é desenvolver um software de gerenciamento de tarefas, denominado BijouFlow, para a empresa LuxeBijoux, com o intuito de solucionar os problemas atuais relacionados à gestão manual de processos, falta de visibilidade sobre o progresso das tarefas e desperdício de materiais. O sistema visa otimizar a operação da empresa, proporcionando uma ferramenta eficiente para a atribuição de tarefas, acompanhamento do progresso dos pedidos e gestão de estoque de materiais, garantindo maior organização, redução de custos e melhoria na experiência do cliente.
+
+- Objetivos Específicos
+
+Automatizar a Gestão de Tarefas e Pedidos:
+Desenvolver funcionalidades que permitam aos gerentes atribuir tarefas de forma ágil e eficiente, dividindo os processos em etapas claras (separação, montagem, conferência e embalo). O sistema também permitirá que os funcionários atualizem o status das tarefas em tempo real, proporcionando maior visibilidade sobre o progresso dos pedidos e reduzindo a necessidade de comunicação manual.
+
+Implementar um Sistema de Alertas para Gestão de Materiais:
+Criar um módulo integrado ao sistema que permita aos funcionários reportar a falta de materiais necessários para a conclusão das tarefas. Esses alertas serão visíveis na parte de status de cada pedido, facilitando para os responsáveis pela gestão de estoque, evitando desperdícios e atrasos na produção. O sistema também poderá gerar relatórios sobre o consumo de materiais, auxiliando na previsão de compras e no controle de custos.
 
 ## Justificativa
 
-Descreva a importância ou a motivação para trabalhar com esta aplicação que você escolheu. Indique as razões pelas quais você escolheu seus objetivos específicos ou as razões para aprofundar em certos aspectos do software.
-
-O grupo de trabalho pode fazer uso de questionários, entrevistas e dados estatísticos, que podem ser apresentados, com o objetivo de esclarecer detalhes do problema que será abordado pelo grupo.
-
-> **Links Úteis**:
-> - [Como montar a justificativa](https://guiadamonografia.com.br/como-montar-justificativa-do-tcc/)
+Os objetivos específicos foram definidos com base nos principais desafios enfrentados pela LuxeBijoux: a gestão manual de tarefas e a falta de controle sobre o estoque de materiais. A automatização desses processos não apenas aumentará a eficiência operacional, mas também reduzirá erros, atrasos e desperdícios, contribuindo para a sustentabilidade financeira e operacional da empresa. Além disso, a visibilidade em tempo real sobre o progresso dos pedidos permitirá uma tomada de decisão mais ágil e assertiva, fortalecendo a organização e produção da LuxeBijoux.
 
 ## Público-Alvo
 
