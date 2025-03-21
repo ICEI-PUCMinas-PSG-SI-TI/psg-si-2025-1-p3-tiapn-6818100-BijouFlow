@@ -2,45 +2,103 @@
 
 <span style="color:red">Pré-requisitos: <a href="01-Documentação de Contexto.md"> Documentação de Contexto</a></span>
 
-Definição do problema e ideia de solução a partir da perspectiva do usuário. É composta pela definição do  diagrama de personas, histórias de usuários, requisitos funcionais e não funcionais além das restrições do projeto.
-
-Apresente uma visão geral do que será abordado nesta parte do documento, enumerando as técnicas e/ou ferramentas utilizadas para realizar a especificações do projeto
-
 ## Personas
 
-Pedro Paulo tem 26 anos, é arquiteto recém-formado e autônomo. Pensa em se desenvolver profissionalmente através de um mestrado fora do país, pois adora viajar, é solteiro e sempre quis fazer um intercâmbio. Está buscando uma agência que o ajude a encontrar universidades na Europa que aceitem alunos estrangeiros.
+- Persona 1: Gerente de Produção
+Thais Gonçalves tem 27 anos e é Gerente de Produção na LuxeBijoux. Formada em Administração de Empresas, Thais é responsável por garantir que todos os pedidos sejam produzidos e entregues dentro do prazo. Ela adora organização e planejamento, mas se frustra com a falta de ferramentas eficientes para gerenciar sua equipe.
 
-Enumere e detalhe as personas da sua solução. Para tanto, baseie-se tanto nos documentos disponibilizados na disciplina e/ou nos seguintes links:
+Responsabilidades:
 
-> **Links Úteis**:
-> - [Rock Content](https://rockcontent.com/blog/personas/)
-> - [Hotmart](https://blog.hotmart.com/pt-br/como-criar-persona-negocio/)
-> - [O que é persona?](https://resultadosdigitais.com.br/blog/persona-o-que-e/)
-> - [Persona x Público-alvo](https://flammo.com.br/blog/persona-e-publico-alvo-qual-a-diferenca/)
-> - [Mapa de Empatia](https://resultadosdigitais.com.br/blog/mapa-da-empatia/)
-> - [Mapa de Stalkeholders](https://www.racecomunicacao.com.br/blog/como-fazer-o-mapeamento-de-stakeholders/)
->
-Lembre-se que você deve ser enumerar e descrever precisamente e personalizada todos os clientes ideais que sua solução almeja.
+Confirmar pedidos e designar tarefas aos funcionários.
+
+Acompanhar o progresso dos pedidos em todas as etapas (separação, montagem, conferência e embalo).
+
+Garantir que os prazos sejam cumpridos e que não haja atrasos na produção.
+
+Necessidades:
+
+Um sistema que permita visualizar o status de todos os pedidos em tempo real.
+
+Designar tarefas de forma rápida e eficiente, sem depender de processos manuais.
+
+Receber alertas sobre falta de materiais para tomar decisões ágeis.
+
+Frustrações:
+
+Dificuldade em acompanhar o progresso dos pedidos manualmente.
+
+Falta de visibilidade sobre o estoque de peças, o que causa atrasos na produção.
+
+Tempo excessivo gasto com processos manuais e comunicação ineficiente.
+
+Thais está em busca de uma solução tecnológica que simplifique sua rotina e aumente a eficiência da equipe.
+
+- Persona 2: Funcionária de Separação
+Ana Luiza tem 23 anos e trabalha como Funcionária de Separação na LuxeBijoux. Ela é responsável por separar as peças necessárias para a montagem das bijuterias, garantindo que tudo esteja pronto para a próxima etapa. Ana é dedicada e gosta de ver seu trabalho contribuindo para o sucesso da empresa, mas se sente sobrecarregada com a falta de ferramentas adequadas.
+
+Responsabilidades:
+
+Separar as peças necessárias para a montagem das bijuterias de acordo com cada pedido.
+
+Verificar a disponibilidade de todas as peças antes de passar o pedido para a próxima etapa.
+
+Necessidades:
+
+Um sistema que permita marcar a tarefa como concluída caso todas as peças estejam disponíveis.
+
+Marcar como "falta" no status do pedido, indicando quais peças estão em falta e o motivo do atraso.
+
+Frustrações:
+
+Dificuldade em comunicar a falta de peças de forma clara e organizada.
+
+Preocupação com erros na conferência de peças, o que pode causar problemas nas etapas seguintes.
+
+Falta de integração entre as etapas de produção, o que gera retrabalho.
+
+Ana deseja uma ferramenta que facilite seu trabalho e ajude a evitar erros e atrasos.
+
+
+- Persona 3: Cliente
+Anna Carolina Moreira tem 32 anos e é uma cliente atacadista de bijuterias personalizadas para revenda. Ela adora trabalhar com peças exclusivas e valoriza a qualidade e o prazo de entrega dos produtos. Anna é uma cliente fiel da LuxeBijoux, mas se sente frustrada com a falta de comunicação sobre o status de seus pedidos.
+
+Perfil:
+
+Cliente atacadista que compra bijuterias personalizadas para revender em sua loja.
+
+Valoriza prazos de entrega curtos e comunicação transparente.
+
+Necessidades:
+
+Acompanhar o status do pedido em tempo real, desde a confirmação até a entrega.
+
+Receber notificações sobre o progresso do pedido (separação, montagem, conferência e embalo).
+
+Garantir que o pedido será entregue no prazo combinado.
+
+Frustrações:
+
+Falta de comunicação clara sobre o status do pedido.
+
+Dificuldade em saber se há atrasos ou problemas com o pedido.
+
+Preocupação com a possibilidade de receber pedidos incompletos ou fora do prazo.
+
+Anna está em busca de uma experiência de compra mais transparente e confiável, onde ela possa acompanhar cada etapa do processo sem precisar entrar em contato constantemente com a empresa.
+
+
 
 ## Histórias de Usuários
 
 Com base na análise das personas forma identificadas as seguintes histórias de usuários:
 
-|EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
+|EU COMO... PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
 |--------------------|------------------------------------|----------------------------------------|
-|Usuário do sistema  | Registrar minhas tarefas           | Não esquecer de fazê-las               |
-|Administrador       | Alterar permissões                 | Permitir que possam administrar contas |
-
-Apresente aqui as histórias de usuário que são relevantes para o projeto de sua solução. As Histórias de Usuário consistem em uma ferramenta poderosa para a compreensão e elicitação dos requisitos funcionais e não funcionais da sua aplicação. Se possível, agrupe as histórias de usuário por contexto, para facilitar consultas recorrentes à essa parte do documento.
-
-> **Links Úteis**:
-> - [Histórias de usuários com exemplos e template](https://www.atlassian.com/br/agile/project-management/user-stories)
-> - [Como escrever boas histórias de usuário (User Stories)](https://medium.com/vertice/como-escrever-boas-users-stories-hist%C3%B3rias-de-usu%C3%A1rios-b29c75043fac)
-> - [User Stories: requisitos que humanos entendem](https://www.luiztools.com.br/post/user-stories-descricao-de-requisitos-que-humanos-entendem/)
-> - [Histórias de Usuários: mais exemplos](https://www.reqview.com/doc/user-stories-example.html)
-> - [9 Common User Story Mistakes](https://airfocus.com/blog/user-story-mistakes/)
-
-
+|Gerente de Produção | Visualizar status dos pedidos, designar tarefas, receber alertas de materiais.| Garantir prazos, reduzir processos manuais, evitar atrasos. |
+|Funcionária de Separação | Marcar tarefas como concluídas ou com falta de peças, receber lista de peças. | Evitar erros, agilizar a separação, garantir que o pedido avance corretamente. |
+|Cliente | Acompanhar status do pedido, receber notificações, ser informada sobre atrasos. | Ter transparência e confiança no processo de entrega. |
+|Equipe de estoque | Receber alertas de falta de materiais, acessar relatórios de consumo. | Evitar interrupções na produção, planejar compras, reduzir desperdícios. |
+|Administrador | Alterar permissões, cadastrar usúarios, acessar relatórios de consumo. | Garantir segurança, facilitar a gestão de usuários, melhorar a eficiência. |
 
 ## Requisitos
 
