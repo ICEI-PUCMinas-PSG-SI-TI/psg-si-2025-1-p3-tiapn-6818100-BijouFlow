@@ -47,7 +47,7 @@ Porte das Empresas:
 
 - Pequenas e médias empresas (PMEs) com equipes de 10 a 100 funcionários.
 
-- Grandes empresas com múltiplos departamentos e processos complexos.
+- Grandes empresas com múltiplos departamentos.
 
 Setores de Atuação:
 
