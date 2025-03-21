@@ -1,8 +1,17 @@
 # Introdução
 
-Texto descritivo com a visão geral do projeto abordado. Inclui o contexto, o problema, os objetivos, a justificativa e o público-alvo do projeto.
+Atualmente, a empresa Clara Bijoux enfrenta desafios relacionados à gestão manual na designação de tarefas e na visibilidade sobre o progresso das tarefas relacionados a separação de materiais e montagem para fabricação de pedidos, além disso, o alerta sobre a falta de materias vem sendo realizada de maneira manual e escrita em papel, ocasionando um grande desperdício de material e mais atraso na fabricação das peças. 
 
 ## Problema
+
+O BijouFlow vem para solucionar os diversos problemas que a empresa enfrenta, sendo um sistema de gerenciador de tarefas(Task Manager) onde será possível para os gerentes a atribuição de tarefas diárias para cada funcionário respectivo de sua função:
+
+- Separação
+- Montagem
+- Conferência e embalo
+
+Estes por sua vez, irão conseguir com a utilização da aplicação alterar o status de progresso sobre cada fase e poderão de forma eficiente informar sobre as faltas de materiais para a finalização de cada fase do processo. 
+
 Nesse momento você deve apresentar o problema que a sua aplicação deve  resolver. No entanto, não é a hora de comentar sobre a aplicação.
 
 Descreva também o contexto em que essa aplicação será usada, se  houver: empresa, tecnologias, etc. Novamente, descreva apenas o que de  fato existir, pois ainda não é a hora de apresentar requisitos  detalhados ou projetos.
