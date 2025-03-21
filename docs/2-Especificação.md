@@ -92,7 +92,7 @@ Anna está em busca de uma experiência de compra mais transparente e confiável
 
 Com base na análise das personas forma identificadas as seguintes histórias de usuários:
 
-|EU COMO... PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
+|EU COMO... 'PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
 |--------------------|------------------------------------|----------------------------------------|
 |Gerente de Produção | Visualizar status dos pedidos, designar tarefas, receber alertas de materiais.| Garantir prazos, reduzir processos manuais, evitar atrasos. |
 |Funcionária de Separação | Marcar tarefas como concluídas ou com falta de peças, receber lista de peças. | Evitar erros, agilizar a separação, garantir que o pedido avance corretamente. |
