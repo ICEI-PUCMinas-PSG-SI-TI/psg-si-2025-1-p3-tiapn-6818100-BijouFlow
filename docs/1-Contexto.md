@@ -23,7 +23,7 @@ Estes por sua vez, irão conseguir com a utilização da aplicação alterar o s
  
 - Objetivo Geral
 
-O objetivo geral deste trabalho é desenvolver um software de gerenciamento de tarefas, denominado BijouFlow, para a empresa LuxeBijoux, com o intuito de solucionar os problemas atuais relacionados à gestão manual de processos, falta de visibilidade sobre o progresso das tarefas e desperdício de materiais. O sistema visa otimizar a operação da empresa, proporcionando uma ferramenta eficiente para a atribuição de tarefas, acompanhamento do progresso dos pedidos e gestão de estoque de materiais, garantindo maior organização, redução de custos e melhoria na experiência do cliente.
+O objetivo geral deste projeto é desenvolver um software de gerenciamento de tarefas, denominado BijouFlow, para a empresa LuxeBijoux, com o intuito de solucionar os problemas atuais relacionados à gestão manual de processos, falta de visibilidade sobre o progresso das tarefas e desperdício de materiais. O sistema visa otimizar a operação da empresa, proporcionando uma ferramenta eficiente para a atribuição de tarefas, acompanhamento do progresso dos pedidos e gestão de estoque de materiais, garantindo maior organização, redução de custos e melhoria na experiência do cliente.
 
 - Objetivos Específicos
 
@@ -39,13 +39,39 @@ Os objetivos específicos foram definidos com base nos principais desafios enfre
 
 ## Público-Alvo
 
-Descreva quem serão as pessoas que usarão a sua aplicação indicando os diferentes perfis. O objetivo aqui não é definir quem serão os clientes ou quais serão os papéis dos usuários na aplicação. A ideia é, dentro do possível, conhecer um pouco mais sobre o perfil dos usuários: conhecimentos prévios, relação com a tecnologia, relações
-hierárquicas, etc.
+Como um sistema de gerenciamento de tarefas, o público-alvo do projeto da aplicação se concentra em empresas de pequeno à grande porte de clientes, que ainda utilizam processos manuais para a organização das tarefas e do trabalho.
 
-Adicione informações sobre o público-alvo por meio de uma descrição textual, diagramas de personas e mapa de stakeholders.
+Empresas de pequeno a grande porte, especialmente aquelas envolvidas em processos de produção, montagem ou gestão de pedidos, que necessitam de uma ferramenta para organização do trabalho, designação de tarefas e controle de faltas de materiais.
 
-> **Links Úteis**:
-> - [Público-alvo](https://blog.hotmart.com/pt-br/publico-alvo/)
-> - [Como definir o público alvo](https://exame.com/pme/5-dicas-essenciais-para-definir-o-publico-alvo-do-seu-negocio/)
-> - [Público-alvo: o que é, tipos, como definir seu público e exemplos](https://klickpages.com.br/blog/publico-alvo-o-que-e/)
-> - [Qual a diferença entre público-alvo e persona?](https://rockcontent.com/blog/diferenca-publico-alvo-e-persona/)
+Porte das Empresas:
+
+- Pequenas e médias empresas (PMEs) com equipes de 10 a 100 funcionários.
+
+- Grandes empresas com múltiplos departamentos e processos complexos.
+
+Setores de Atuação:
+
+- Indústrias de fabricação (bijuterias, confecções, móveis, etc.).
+
+- Empresas de logística e distribuição.
+
+- Startups e negócios em crescimento que buscam escalabilidade.
+
+Necessidades Específicas:
+
+- Gestão eficiente de tarefas e processos.
+
+- Controle de estoque e alertas sobre falta de materiais.
+
+- Visibilidade em tempo real do progresso dos pedidos e tarefas.
+
+- Redução de desperdícios e atrasos na produção.
+
+Objetivos:
+
+- Melhorar a organização e eficiência dos processos internos.
+
+- Reduzir custos operacionais e aumentar a produtividade.
+
+- Garantir a entrega de pedidos dentro dos prazos estabelecidos.
+  
