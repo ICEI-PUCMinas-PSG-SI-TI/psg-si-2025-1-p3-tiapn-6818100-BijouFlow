@@ -1,6 +1,12 @@
 # Introdução
 
-Atualmente, a empresa Clara Bijoux enfrenta desafios relacionados à gestão manual na designação de tarefas e na visibilidade sobre o progresso das tarefas relacionados a separação de materiais e montagem para fabricação de pedidos, além disso, o alerta sobre a falta de materias vem sendo realizada de maneira manual e escrita em papel, ocasionando um grande desperdício de material e mais atraso na fabricação das peças. 
+A LuxeBijoux é uma empresa de bijuterias com mais de 10 anos de atuação no mercado, especializada em varejo e atacado. Com uma loja física localizada no centro de Belo Horizonte, e uma presença consolidada em todo o território nacional via site, a empresa se destaca pela fabricação própria de peças de alta qualidade e designs exclusivos.
+
+Ao longo de sua trajetória, a LuxeBijoux construiu sua reputação com base em dois pilares essenciais: a excelência na produção de bijuterias e a priorização da experiência do cliente. No entanto, como toda empresa em crescimento, a LuxeBijoux enfrenta desafios que impactam sua operação e sua capacidade de atender às demandas do mercado atual.
+
+Atualmente, a LuxeBijoux enfrenta desafios relacionados à gestão manual na designação de tarefas e na visibilidade sobre o progresso das tarefas relacionados a separação de materiais e montagem para fabricação de pedidos, além disso, o alerta sobre a falta de materias vem sendo realizada de maneira manual e escrita em papel, ocasionando um grande desperdício de material e mais atraso na fabricação das peças. 
+
+Neste repositório, apresentaremos uma análise detalhada dos problemas enfrentados pela empresa e proporemos uma solução inovadora por meio de uma aplicação desenvolvida para otimizar processos, melhorar a experiência do trabalho e impulsionar o crescimento da LuxeBijoux.
 
 ## Problema
 
@@ -12,16 +18,6 @@ O BijouFlow vem para solucionar os diversos problemas que a empresa enfrenta, se
 
 Estes por sua vez, irão conseguir com a utilização da aplicação alterar o status de progresso sobre cada fase e poderão de forma eficiente informar sobre as faltas de materiais para a finalização de cada fase do processo. 
 
-Nesse momento você deve apresentar o problema que a sua aplicação deve  resolver. No entanto, não é a hora de comentar sobre a aplicação.
-
-Descreva também o contexto em que essa aplicação será usada, se  houver: empresa, tecnologias, etc. Novamente, descreva apenas o que de  fato existir, pois ainda não é a hora de apresentar requisitos  detalhados ou projetos.
-
-Nesse momento, o grupo pode optar por fazer uso  de ferramentas como Design Thinking, que permite um olhar de ponta a ponta para o problema.
-
-> **Links Úteis**:
-> - [Objetivos, Problema de pesquisa e Justificativa](https://medium.com/@versioparole/objetivos-problema-de-pesquisa-e-justificativa-c98c8233b9c3)
-> - [Matriz Certezas, Suposições e Dúvidas](https://medium.com/educa%C3%A7%C3%A3o-fora-da-caixa/matriz-certezas-suposi%C3%A7%C3%B5es-e-d%C3%BAvidas-fa2263633655)
-> - [Brainstorming](https://www.euax.com.br/2018/09/brainstorming/)
 
 ## Objetivos
 
