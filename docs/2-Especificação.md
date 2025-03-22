@@ -108,36 +108,37 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 
 ## Requisitos
 
-As tabelas que se seguem apresentam os requisitos funcionais e não funcionais que detalham o escopo do projeto. Para determinar a prioridade de requisitos, aplicar uma técnica de priorização de requisitos e detalhar como a técnica foi aplicada.
+Para a classificação de prioridades de requisitos que serão implementados no sistema, utilizamos a técnica de MoSCoW (Must have, Should have, Could have, Won't have), que classifica os requisitos em Alta, Média e Baixa prioridade.
 
 ### Requisitos Funcionais
 
 |ID    | Descrição do Requisito  | Prioridade |
 |------|-----------------------------------------|----|
-|RF-001| Permitir que o usuário cadastre tarefas | ALTA | 
-|RF-002| Emitir um relatório de tarefas no mês   | MÉDIA |
+|RF-001| O sistema deve permitir o cadastro e autenticação de usuários (gerentes e funcionários). | ALTA | 
+|RF-002| O sistema deve permitir que o gerente designe tarefas aos funcionários.  | ALTA |
+|RF-003| O sistema deve permitir que os funcionários marquem tarefas como concluídas.  | ALTA |
+|RF-004| O sistema deve exibir um dashboard para o gerente acompanhar o progresso dos pedidos. | ALTA |
+|RF-005| O sistema deve permitir que o cliente acompanhe o status do pedido. | MÉDIA |
+|RF-006| O sistema deve permitir que os funcionários reportem falta de materiais. | ALTA |
+|RF-007| O sistema deve enviar alertas automáticos sobre falta de materiais para a equipe de estoque. | MÉDIA |
+|RF-008| O sistema deve gerar relatórios detalhados sobre o progresso das tarefas. | MÉDIA |
+|RF-009| O sistema deve permitir que o administrador gerencie permissões de acesso dos usuários. | MÉDIA |
+|RF-010| O sistema deve exibir um ranking do funcionário que mais separou peças de pedidos no mês. | BAIXA |
+|RF-011| O sistema deve exibir um ranking do funcionário que mais montou peças de pedidos no mês. | BAIXA |
+
 
 ### Requisitos não Funcionais
 
 |ID     | Descrição do Requisito  |Prioridade |
 |-------|-------------------------|----|
-|RNF-001| O sistema deve ser responsivo para rodar em um dispositivos móvel | MÉDIA | 
-|RNF-002| Deve processar requisições do usuário em no máximo 3s |  BAIXA | 
+|RNF-001| O sistema deve ser responsivo e funcionar em dispositivos móveis e desktops. | MÉDIA | 
+|RNF-002| O sistema deve ter um tempo de resposta inferior a 4 segundos para todas as operações.| MÉDIA | 
+|RNF-003| O sistema deve garantir a segurança dos dados dos usuários, com criptografia de senhas e dados sensíveis. | ALTA | 
+|RNF-004| O sistema deve ser capaz de suportar o cadastro de grandes números de usuários. | ALTA | 
+|RNF-005| O sistema deve ser escalável para suportar o crescimento da empresa. | MÉDIA | 
+|RNF-006| O sistema deve ser de fácil usabilidade, com interface intuitiva para todos os usuários. | ALTA | 
+|RNF-007| O sistema deve ser desenvolvido utilizando tecnologias modernas e de fácil manutenção. | MÉDIA | 
 
-Com base nas Histórias de Usuário, enumere os requisitos da sua solução. Classifique esses requisitos em dois grupos:
-
-- [Requisitos Funcionais
- (RF)](https://pt.wikipedia.org/wiki/Requisito_funcional):
- correspondem a uma funcionalidade que deve estar presente na
-  plataforma (ex: cadastro de usuário).
-- [Requisitos Não Funcionais
-  (RNF)](https://pt.wikipedia.org/wiki/Requisito_n%C3%A3o_funcional):
-  correspondem a uma característica técnica, seja de usabilidade,
-  desempenho, confiabilidade, segurança ou outro (ex: suporte a
-  dispositivos iOS e Android).
-Lembre-se que cada requisito deve corresponder à uma e somente uma
-característica alvo da sua solução. Além disso, certifique-se de que
-todos os aspectos capturados nas Histórias de Usuário foram cobertos.
 
 ## Restrições
 
@@ -146,10 +147,7 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 |ID| Restrição                                             |
 |--|-------------------------------------------------------|
 |01| O projeto deverá ser entregue até o final do semestre |
-|02| Não pode ser desenvolvido um módulo de backend        |
+|02| O sistema deve ser compatível com dispositivos móveis e desktops. |
+|03| A solução deve ser escalável para futuras expansões, mas sem custos adicionais iniciais. |
+|04| O sistema deve ser desenvolvido em português, com possibilidade de tradução futura. |
 
-Enumere as restrições à sua solução. Lembre-se de que as restrições geralmente limitam a solução candidata.
-
-> **Links Úteis**:
-> - [O que são Requisitos Funcionais e Requisitos Não Funcionais?](https://codificar.com.br/requisitos-funcionais-nao-funcionais/)
-> - [O que são requisitos funcionais e requisitos não funcionais?](https://analisederequisitos.com.br/requisitos-funcionais-e-requisitos-nao-funcionais-o-que-sao/)
