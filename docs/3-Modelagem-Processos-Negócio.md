@@ -48,7 +48,7 @@ Atualmente, o processo de gestão de tarefas e pedidos na LuxeBijoux é realizad
 
 - Desperdício de Materiais: A falta de controle sobre o estoque resulta em desperdícios e atrasos na produção.
 
-![Modelagem BPMN(AS IS)]()
+![Modelagem BPMN(AS IS)](https://github.com/ICEI-PUCMinas-PSG-SI-TI/psg-si-2025-1-p3-tiapn-6818100-grupo-4-1/blob/main/docs/images/96bf92c7-6ff2-40e6-b455-d6f096c29b78.jpg)
 
 ### 3.2. Descrição geral da proposta (Modelagem TO BE)
 
