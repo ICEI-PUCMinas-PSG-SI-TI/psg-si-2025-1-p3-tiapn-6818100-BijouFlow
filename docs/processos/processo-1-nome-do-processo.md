@@ -3,7 +3,7 @@
 _Apresente aqui o nome e as oportunidades de melhoria para o processo 1. 
 Em seguida, apresente o modelo do processo 1, descrito no padrão BPMN._
 
-![Fluxo de Gestão de Pedidos]([[docs/imagens/bpmn_processo1.png](https://github.com/ICEI-PUCMinas-PSG-SI-TI/psg-si-2025-1-p3-tiapn-6818100-grupo-4-1/edit/main/docs/processos/processo-1-nome-do-processo.md)](https://github.com/ICEI-PUCMinas-PSG-SI-TI/psg-si-2025-1-p3-tiapn-6818100-grupo-4-1/blob/06077e5ac2641c7b46f18d7b31a364678aad16a2/docs/images/Exemplo%20de%20diagrama%20colaborativo%20BPMN%20-%20P%C3%A1gina%201.png))
+![Fluxo de Gestão de Pedidos](docs/images/Exemplo de diagrama colaborativo BPMN - Página 1.png)
 
 
 #### Detalhamento das atividades
