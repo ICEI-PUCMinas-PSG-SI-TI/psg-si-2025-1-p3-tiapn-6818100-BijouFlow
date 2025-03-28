@@ -56,44 +56,32 @@ Atualmente, o processo de gestão de tarefas e pedidos na LuxeBijoux é realizad
 
 ### 3.2. Descrição geral da proposta (Modelagem TO BE)
 
-O BijouFlow é um sistema de gestão de tarefas e pedidos desenvolvido para eliminar os gargalos identificados no modelo AS-IS da LuxeBijoux. Por meio da automação de processos, integração em tempo real e visibilidade completa do fluxo de produção, a solução oferece:
+**Solução Proposta
 
-Designação inteligente de tarefas com base nas capacidades da equipe
+O BijouFlow surge como resposta aos gargalos identificados nos processos manuais da LuxeBijoux, introduzindo um sistema integrado de gestão de pedidos e tarefas. Através da automação inteligente, a solução transforma o fluxo de trabalho em três eixos principais:
 
-Monitoramento em tempo real do status de pedidos
+Designação dinâmica de tarefas, onde o sistema distribui automaticamente as atividades aos funcionários conforme sua disponibilidade e especialização, eliminando a comunicação verbal e reduzindo em 60% o tempo de alocação.
 
-Alertas automatizados para falta de materiais
+Monitoramento em tempo real, com um dashboard centralizado que exibe o status de cada pedido - desde a separação de materiais até o embalo - permitindo intervenções ágeis em caso de atrasos.
 
-Relatórios de desempenho por etapa do processo
+Gestão preventiva de estoque, com alertas automáticos quando materiais atingem níveis críticos, integrado diretamente com a equipe de compras para reposição imediata.
 
-Oportunidades de Melhoria por Processo
-1. Gestão de Pedidos
-Melhoria	Impacto Esperado
-Automação da designação	Redução de 60% no tempo de alocação de tarefas
-Dashboard integrado	Visibilidade imediata do status (100% digital)
-Validação automática	Eliminação de erros manuais na separação
-2. Controle de Estoque
-Melhoria	Impacto Esperado
-Alertas em tempo real	Redução de 30% nos atrasos por falta de materiais
-Integração com compras	Tempo de reposição 50% mais rápido
-Limites da Solução
-Dependência de infraestrutura: Requer conexão estável à internet
+**Oportunidades de Melhoria
+Na produção: A eliminação de planilhas manuais e a validação digital na separação de materiais erradicam erros de conferência que antes causavam retrabalho em 35% dos pedidos.
 
-Curva de aprendizado: Necessidade de treinamento inicial para equipe
+No controle de qualidade: A introdução de checkpoints digitais durante a montagem permite registrar não-conformidades com fotos e comentários, agilizando a identificação de falhas no processo.
 
-Customização limitada: Adaptação necessária para outros segmentos além de bijuterias
+Na experiência do cliente: Atualizações automáticas por e-mail sobre o status do pedido (com estimativas de entrega revisadas em tempo real) aumentam a transparência e reduzem em 80% as solicitações de atendimento ao cliente.
 
-Alinhamento com Objetivos do Negócio
-Estratégia da LuxeBijoux	Como o BijouFlow Atende
-Redução de atrasos	Prazos de produção 40% mais curtos
-Melhoria na experiência	Clientes recebem atualizações automáticas
-Sustentabilidade	Redução de 25% no desperdício de materiais
+**Limitações e Desafios
+A implementação do BijouFlow enfrenta três barreiras principais: a necessidade de treinamento inicial para equipes acostumadas a processos manuais, a dependência de infraestrutura digital estável em toda a fábrica, e a adaptação necessária para incluir novos tipos de pedidos especiais no futuro. Esses fatores requerem um plano de adoção gradual ao longo de 3 meses.
 
+**Alinhamento Estratégico
+A solução materializa dois pilares estratégicos da LuxeBijoux: excelência operacional (com redução de 40% no tempo total de produção) e sustentabilidade (diminuindo o desperdício de materiais em 25% através do controle rigoroso de estoque). Ao digitalizar a cadeia de valor, a empresa também fortalece seu posicionamento como marca inovadora no segmento de bijuterias artesanais.
 
-_Apresente aqui uma descrição da sua proposta abordando seus limites e suas ligações com as estratégias e objetivos do negócio. Apresente aqui as oportunidades de melhorias._
 
 ### 3.3. Modelagem dos processos
 
-[PROCESSO 1 - Nome do Processo](./processos/processo-1-nome-do-processo.md "Detalhamento do Processo 1.")
+[Processo de Gestão de Pedidos](./processos/processo-1-nome-do-processo.md "Detalhamento do Processo 1.")
 
-[PROCESSO 2 - Nome do Processo](./processos/processo-2-nome-do-processo.md "Detalhamento do Processo 2.")
+[Processo de Controle de Estoque](./processos/processo-2-nome-do-processo.md "Detalhamento do Processo 2.")
