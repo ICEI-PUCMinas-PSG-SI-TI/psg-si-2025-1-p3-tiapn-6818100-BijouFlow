@@ -9,6 +9,7 @@ Em seguida, apresente o modelo do processo 1, descrito no padrão BPMN._
 
 **Cadastrar Pedido no Sistema**
 
+
 | **Campo**       | **Tipo**         | **Restrições** | **Valor default** |
 | ---             | ---              | ---            | ---               |
 | Número do Pedido | Número  | Automático(sequencial) | -                 |
@@ -26,7 +27,9 @@ Em seguida, apresente o modelo do processo 1, descrito no padrão BPMN._
 | Cancelar            | Fim do proceso de cadastro  | cancel |
 
 
+
 **Designar Tarefas Automáticas**
+
 
 | **Campo**       | **Tipo**         | **Restrições** | **Valor default** |
 | ---             | ---              | ---            | ---               |
@@ -51,10 +54,12 @@ Em seguida, apresente o modelo do processo 1, descrito no padrão BPMN._
 | Quantidade Necessária |	Número | > 0 | - |
 | Status Disponibilidade |	Seleção Única	| Disponível/Em Falta/Parcial | - |
 
+
 | **Comandos**         |  **Destino**  | **Tipo**          |
 | ---                  | ---                            | ---               |
 | Continuar | Tarefa de Separação|	default |
 | Reportar Falta | Alertar Compras	| cancel |
+
 
 
 **Tarefa de Separação**
@@ -65,10 +70,12 @@ Em seguida, apresente o modelo do processo 1, descrito no padrão BPMN._
 | Hora de Início | Hora | Formato 24h | - |
 | Hora de Término	|	Hora | > Hora de Início | - |
 
+
 | **Comandos**         |  **Destino**  | **Tipo**          |
 | ---                  | ---                            | ---               |
 | Concluir | Montagem |	default |
 | Reportar Problema	| Revisar Separação | cancel |
+
 
 
 **Atualizar Dashboard**
@@ -78,6 +85,7 @@ Em seguida, apresente o modelo do processo 1, descrito no padrão BPMN._
 | Status do Pedido | Seleção Única | Em Andamento/Concluído/Atrasado | - |
 | Última Atualização | Data e Hora | Automático | - |
 | Responsável |	Caixa de Texto | Preenchimento automático | - |
+
 
 | **Comandos**         |  **Destino**  | **Tipo**          |
 | ---                  | ---                            | ---               |
