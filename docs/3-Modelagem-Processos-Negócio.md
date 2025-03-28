@@ -56,7 +56,7 @@ Atualmente, o processo de gestão de tarefas e pedidos na LuxeBijoux é realizad
 
 ### 3.2. Descrição geral da proposta (Modelagem TO BE)
 
-**Solução Proposta
+**Solução Proposta**
 
 O BijouFlow surge como resposta aos gargalos identificados nos processos manuais da LuxeBijoux, introduzindo um sistema integrado de gestão de pedidos e tarefas. Através da automação inteligente, a solução transforma o fluxo de trabalho em três eixos principais:
 
@@ -66,17 +66,17 @@ Monitoramento em tempo real, com um dashboard centralizado que exibe o status de
 
 Gestão preventiva de estoque, com alertas automáticos quando materiais atingem níveis críticos, integrado diretamente com a equipe de compras para reposição imediata.
 
-**Oportunidades de Melhoria
+**Oportunidades de Melhoria**
 Na produção: A eliminação de planilhas manuais e a validação digital na separação de materiais erradicam erros de conferência que antes causavam retrabalho em 35% dos pedidos.
 
 No controle de qualidade: A introdução de checkpoints digitais durante a montagem permite registrar não-conformidades com fotos e comentários, agilizando a identificação de falhas no processo.
 
 Na experiência do cliente: Atualizações automáticas por e-mail sobre o status do pedido (com estimativas de entrega revisadas em tempo real) aumentam a transparência e reduzem em 80% as solicitações de atendimento ao cliente.
 
-**Limitações e Desafios
+**Limitações e Desafios**
 A implementação do BijouFlow enfrenta três barreiras principais: a necessidade de treinamento inicial para equipes acostumadas a processos manuais, a dependência de infraestrutura digital estável em toda a fábrica, e a adaptação necessária para incluir novos tipos de pedidos especiais no futuro. Esses fatores requerem um plano de adoção gradual ao longo de 3 meses.
 
-**Alinhamento Estratégico
+**Alinhamento Estratégico**
 A solução materializa dois pilares estratégicos da LuxeBijoux: excelência operacional (com redução de 40% no tempo total de produção) e sustentabilidade (diminuindo o desperdício de materiais em 25% através do controle rigoroso de estoque). Ao digitalizar a cadeia de valor, a empresa também fortalece seu posicionamento como marca inovadora no segmento de bijuterias artesanais.
 
 
