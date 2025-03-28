@@ -3,7 +3,8 @@
 _Apresente aqui o nome e as oportunidades de melhoria para o processo 1. 
 Em seguida, apresente o modelo do processo 1, descrito no padrão BPMN._
 
-![Fluxo de Gestão de Pedidos](docs/images/Exemplo de diagrama colaborativo BPMN - Página 1.png)
+![Fluxo de Gestão de Pedidos](psg-si-2025-1-p3-tiapn-6818100-grupo-4-1/docs/images
+/Exemplo de diagrama colaborativo BPMN - Página 1.png)
 
 
 #### Detalhamento das atividades
