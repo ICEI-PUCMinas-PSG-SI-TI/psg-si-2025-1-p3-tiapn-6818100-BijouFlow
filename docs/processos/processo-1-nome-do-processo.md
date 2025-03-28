@@ -3,65 +3,83 @@
 _Apresente aqui o nome e as oportunidades de melhoria para o processo 1. 
 Em seguida, apresente o modelo do processo 1, descrito no padrão BPMN._
 
-![Exemplo de um Modelo BPMN do PROCESSO 1](../images/process.png "Modelo BPMN do Processo 1.")
+![Modelo BPMN - Processo de Gestão de Pedidos](docs/images/Exemplo de diagrama colaborativo BPMN - Página 1.png")
 
 #### Detalhamento das atividades
 
-_Descreva aqui cada uma das propriedades das atividades do processo 1. 
-Devem estar relacionadas com o modelo de processo apresentado anteriormente._
-
-_Os tipos de dados a serem utilizados são:_
-
-_* **Área de texto** - campo texto de múltiplas linhas_
-
-_* **Caixa de texto** - campo texto de uma linha_
-
-_* **Número** - campo numérico_
-
-_* **Data** - campo do tipo data (dd-mm-aaaa)_
-
-_* **Hora** - campo do tipo hora (hh:mm:ss)_
-
-_* **Data e Hora** - campo do tipo data e hora (dd-mm-aaaa, hh:mm:ss)_
-
-_* **Imagem** - campo contendo uma imagem_
-
-_* **Seleção única** - campo com várias opções de valores que são mutuamente exclusivas (tradicional radio button ou combobox)_
-
-_* **Seleção múltipla** - campo com várias opções que podem ser selecionadas mutuamente (tradicional checkbox ou listbox)_
-
-_* **Arquivo** - campo de upload de documento_
-
-_* **Link** - campo que armazena uma URL_
-
-_* **Tabela** - campo formado por uma matriz de valores_
-
-
-**Nome da atividade 1**
+**Cadastrar Pedido no Sistema**
 
 | **Campo**       | **Tipo**         | **Restrições** | **Valor default** |
 | ---             | ---              | ---            | ---               |
-| [Nome do campo] | [tipo de dados]  |                |                   |
-| ***Exemplo:***  |                  |                |                   |
-| login           | Caixa de Texto   | formato de e-mail |                |
-| senha           | Caixa de Texto   | mínimo de 8 caracteres |           |
+| Número do Pedido | Número  | Automático(sequencial) | -                 |
+| Nome do Cliente | Caixa de Texto   | Obrigatório, Mínimo 3 caracteres | - |
+| Contato do Cliente | Caixa de Texto   | formato (XX) XXXXX-XXXX | -     |
+| Itens do Pedido | Tabela | Colunas: Código, Descrição, Qtd | -          |
+| Prazo de Entrega | Data | Deve ser futura | Data atual + 8 dias |
+| Anexos | Arquivo | Formatos: PDF, JPG, PNG | - |
+
+
 
 | **Comandos**         |  **Destino**                   | **Tipo** |
 | ---                  | ---                            | ---               |
-| [Nome do botão/link] | Atividade/processo de destino  | (default/cancel/  ) |
-| ***Exemplo:***       |                                |                   |
-| entrar               | Fim do Processo 1              | default           |
-| cadastrar            | Início do proceso de cadastro  |                   |
+| Salvar              | Designar Tarefas | default |        
+| Cancelar            | Fim do proceso de cadastro  | cancel |
 
 
-**Nome da atividade 2**
+**Designar Tarefas Automáticas**
 
 | **Campo**       | **Tipo**         | **Restrições** | **Valor default** |
 | ---             | ---              | ---            | ---               |
-| [Nome do campo] | [tipo de dados]  |                |                   |
-|                 |                  |                |                   |
+| Funcionário | Seleção Única | Lista de funcionários ativos |  -  |
+| Prioridade | Seleção Única | Alta/Média/Baixa | - |
+| Observações | Área de Texto	|	Máx. 500 caracteres | - |
+
 
 | **Comandos**         |  **Destino**                   | **Tipo**          |
 | ---                  | ---                            | ---               |
-| [Nome do botão/link] | Atividade/processo de destino  | (default/cancel/  ) |
-|                      |                                |                   |
+| Confirmar | Verificar Estoque | default |
+| Rejeitar | Revisar Dados do Pedido | cancel |
+
+
+
+
+**Verificar Estoque (Subprocesso)**
+
+| **Campo**       | **Tipo**         | **Restrições** | **Valor default** |
+| ---             | ---              | ---            | ---               |
+| Código do Material |	Número	| Deve existir no cadastro | - |
+| Quantidade Necessária |	Número | > 0 | - |
+| Status Disponibilidade |	Seleção Única	| Disponível/Em Falta/Parcial | - |
+
+| **Comandos**         |  **Destino**  | **Tipo**          |
+| ---                  | ---                            | ---               |
+| Continuar | Tarefa de Separação|	default |
+| Reportar Falta | Alertar Compras	| cancel |
+
+
+**Tarefa de Separação**
+
+| **Campo**       | **Tipo**         | **Restrições** | **Valor default** |
+| ---             | ---              | ---            | ---               |
+| Materiais Separados	 |	Seleção Múltipla | Lista de itens do pedido | - |
+| Hora de Início | Hora | Formato 24h | - |
+| Hora de Término	|	Hora | > Hora de Início | - |
+
+| **Comandos**         |  **Destino**  | **Tipo**          |
+| ---                  | ---                            | ---               |
+| Concluir | Montagem |	default |
+| Reportar Problema	| Revisar Separação | cancel |
+
+
+**Atualizar Dashboard**
+
+| **Campo**       | **Tipo**         | **Restrições** | **Valor default** |
+| ---             | ---              | ---            | ---               |
+| Status do Pedido | Seleção Única | Em Andamento/Concluído/Atrasado | - |
+| Última Atualização | Data e Hora | Automático | - |
+| Responsável |	Caixa de Texto | Preenchimento automático | - |
+
+| **Comandos**         |  **Destino**  | **Tipo**          |
+| ---                  | ---                            | ---               |
+| Finalizar | Fim do Processo |	default |
+| Editar | Revisar Pedido | cancel |
