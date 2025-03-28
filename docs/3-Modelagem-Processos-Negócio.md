@@ -85,6 +85,6 @@ A solução materializa dois pilares estratégicos da LuxeBijoux: excelência op
 
 ### 3.3. Modelagem dos processos
 
-[Processo de Gestão de Pedidos](docs/images/Exemplo de diagrama colaborativo BPMN - Página 1.png)
+[Processo de Gestão de Pedidos](./processos/processo-1-nome-do-processo.md "Detalhamento do Processo 1.")
 
 [Processo de Controle de Estoque](./processos/processo-2-nome-do-processo.md "Detalhamento do Processo 2.")
