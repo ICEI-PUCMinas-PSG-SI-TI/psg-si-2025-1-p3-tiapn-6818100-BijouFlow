@@ -56,9 +56,39 @@ Atualmente, o processo de gestão de tarefas e pedidos na LuxeBijoux é realizad
 
 ### 3.2. Descrição geral da proposta (Modelagem TO BE)
 
-Tendo identificado os gargalos dos modelos AS IS, apresentem uma descrição da proposta de solução, buscando maior eficiência com a introdução da tecnologia. Abordem também os limites dessa solução e o seu alinhamento com as estratégias e objetivos do contexto de negócio escolhido. 
-Colem aqui os modelos da solução proposta (modelo TO BE) elaborados com o apoio da ferramenta baseada em BPMN utilizada na disciplina.
-Cada processo identificado deve ter seu modelo TO-BE específico. Descrevam as oportunidades de melhoria de cada processo da solução proposta.
+O BijouFlow é um sistema de gestão de tarefas e pedidos desenvolvido para eliminar os gargalos identificados no modelo AS-IS da LuxeBijoux. Por meio da automação de processos, integração em tempo real e visibilidade completa do fluxo de produção, a solução oferece:
+
+Designação inteligente de tarefas com base nas capacidades da equipe
+
+Monitoramento em tempo real do status de pedidos
+
+Alertas automatizados para falta de materiais
+
+Relatórios de desempenho por etapa do processo
+
+Oportunidades de Melhoria por Processo
+1. Gestão de Pedidos
+Melhoria	Impacto Esperado
+Automação da designação	Redução de 60% no tempo de alocação de tarefas
+Dashboard integrado	Visibilidade imediata do status (100% digital)
+Validação automática	Eliminação de erros manuais na separação
+2. Controle de Estoque
+Melhoria	Impacto Esperado
+Alertas em tempo real	Redução de 30% nos atrasos por falta de materiais
+Integração com compras	Tempo de reposição 50% mais rápido
+Limites da Solução
+Dependência de infraestrutura: Requer conexão estável à internet
+
+Curva de aprendizado: Necessidade de treinamento inicial para equipe
+
+Customização limitada: Adaptação necessária para outros segmentos além de bijuterias
+
+Alinhamento com Objetivos do Negócio
+Estratégia da LuxeBijoux	Como o BijouFlow Atende
+Redução de atrasos	Prazos de produção 40% mais curtos
+Melhoria na experiência	Clientes recebem atualizações automáticas
+Sustentabilidade	Redução de 25% no desperdício de materiais
+
 
 _Apresente aqui uma descrição da sua proposta abordando seus limites e suas ligações com as estratégias e objetivos do negócio. Apresente aqui as oportunidades de melhorias._
 
