@@ -1,4 +1,4 @@
-# TÍTULO DO PROJETO
+# BijouFlow
 
 `CURSO` Sistemas de Informação
 
