@@ -4,8 +4,17 @@
 
 ## 4.1. Arquitetura da solução
 
+O BijouFlow é uma solução integrada para gestão de pedidos e produção da LuxeBijoux, composta por 4 módulos principais que se comunicam para automatizar processos manuais, garantir rastreabilidade e melhorar a eficiência operacional.
 
-......  COLOQUE AQUI O SEU TEXTO E O DIAGRAMA DE ARQUITETURA .......
+## Módulos e Tecnologias
+
+**Módulo	Tecnologias	Função Principal**
+
+-> Frontend Web	: React.js, Bootstrap	Interface para clientes (rastreio de pedidos) e gerentes (dashboard de produção)
+
+-> Backend	ASP.NET Core (C#) : REST API	Lógica de negócio, integrações e processamento de dados
+
+-> Banco de Dados	MySQL	: Armazenamento de pedidos, tarefas, estoque e histórico
 
  Inclua um diagrama da solução e descreva os módulos e as tecnologias
  que fazem parte da solução. Discorra sobre o diagrama.
