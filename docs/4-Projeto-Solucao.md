@@ -21,7 +21,7 @@ O BijouFlow é uma solução integrada para gestão de pedidos e produção da L
  
  **Exemplo do diagrama de Arquitetura**:
  
- ![Exemplo de Arquitetura](./images/arquitetura-exemplo.png)
+ ![Diagrama de Arquitetura](./images/DiagramaArquiteturaBijouFlow.png)
  
 
 ### 4.2. Protótipos de telas
