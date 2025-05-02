@@ -10,7 +10,7 @@
 
 - Automatizar a distribuição de credenciais
 
-![Fluxo de Cadastro de Funcionários](docs/images/BPMN_CadastroFuncionario.png)
+![Fluxo de Cadastro de Funcionários](psg-si-2025-1-p3-tiapn-6818100-BijouFlow/docs/images/BPMN_CadastroFuncionario.png)
 
 
 
