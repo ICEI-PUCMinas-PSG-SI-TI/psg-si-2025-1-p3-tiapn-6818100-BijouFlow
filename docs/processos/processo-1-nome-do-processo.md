@@ -10,7 +10,7 @@
 
 - Automatizar a distribuição de credenciais
 
-![Fluxo de Cadastro de Funcionários](BPMN_CadastroFuncionario.png)
+![Fluxo de Cadastro de Funcionários](docs/images/BPMN_CadastroFuncionario.png)
 
 
 
