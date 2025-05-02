@@ -1,94 +1,49 @@
-### 3.3.1 Processo 1 – 
+### 3.3.1 Cadastro de Funcionários 
 
-_Apresente aqui o nome e as oportunidades de melhoria para o processo 1. 
-Em seguida, apresente o modelo do processo 1, descrito no padrão BPMN._
+**Oportunidades de Melhoria**
 
-![Fluxo de Cadastro de Funcionários](docs/images/BPMN_CadastroFuncionario.png)
+- Este processo foi projetado para:
+
+- Reduzir em 90% os erros de cadastro manual
+
+- Garantir conformidade com políticas de segurança de dados
+
+- Automatizar a distribuição de credenciais
+
+![Fluxo de Gestão de Pedidos](docs/images/Exemplo-de-diagrama-colaborativo-BPMN-Página-1.jpg)
+
+
 
 
 #### Detalhamento das atividades
 
-**Cadastrar Pedido no Sistema**
+**Cadastrar Funcionário no Sistema**
 
 
 | **Campo**       | **Tipo**         | **Restrições** | **Valor default** |
 | ---             | ---              | ---            | ---               |
-| Número do Pedido | Número  | Automático(sequencial) | -                 |
-| Nome do Cliente | Caixa de Texto   | Obrigatório, Mínimo 3 caracteres | - |
-| Contato do Cliente | Caixa de Texto   | formato (XX) XXXXX-XXXX | -     |
-| Itens do Pedido | Tabela | Colunas: Código, Descrição, Qtd | -          |
-| Prazo de Entrega | Data | Deve ser futura | Data atual + 8 dias |
-| Anexos | Arquivo | Formatos: PDF, JPG, PNG | - |
-
+| Nome Completo | Caixa de Texto  | Obrigatório (min. 5 caracteres)| - |
+| CPF | Número | Válido e não cadastrado | - |
+| Cargo | Seleção Única   | Operacional/Gerente/ADMIN | - |
 
 
 | **Comandos**         |  **Destino**                   | **Tipo** |
 | ---                  | ---                            | ---               |
-| Salvar              | Designar Tarefas | default |        
+| Submit             | Cadastro | default |        
 | Cancelar            | Fim do proceso de cadastro  | cancel |
 
 
 
-**Designar Tarefas Automáticas**
-
-
-| **Campo**       | **Tipo**         | **Restrições** | **Valor default** |
-| ---             | ---              | ---            | ---               |
-| Funcionário | Seleção Única | Lista de funcionários ativos |  -  |
-| Prioridade | Seleção Única | Alta/Média/Baixa | - |
-| Observações | Área de Texto	|	Máx. 500 caracteres | - |
-
-
-| **Comandos**         |  **Destino**                   | **Tipo**          |
-| ---                  | ---                            | ---               |
-| Confirmar | Verificar Estoque | default |
-| Rejeitar | Revisar Dados do Pedido | cancel |
-
-
-
-
-**Verificar Estoque (Subprocesso)**
+**Criar Acesso no Sistema**
 
 | **Campo**       | **Tipo**         | **Restrições** | **Valor default** |
 | ---             | ---              | ---            | ---               |
-| Código do Material |	Número	| Deve existir no cadastro | - |
-| Quantidade Necessária |	Número | > 0 | - |
-| Status Disponibilidade |	Seleção Única	| Disponível/Em Falta/Parcial | - |
+| Email |	Caixa de Texto	| email@example.com | - |
+| Perfil de Acesso |	Seleção Única | Baseado no cargo | - |
+| Senha |	Caixa de Texto	| Obrigatório min. 8 caracteres (letras + números e símbolos) | - |
 
 
-| **Comandos**         |  **Destino**  | **Tipo**          |
-| ---                  | ---                            | ---               |
-| Continuar | Tarefa de Separação|	default |
+| **Comandos**         |  **Destino**  | **Tipo** |
+| ---                  | ---           | ---      |
+| Concluir | Logar funcionário |	default |
 | Reportar Falta | Alertar Compras	| cancel |
-
-
-
-**Tarefa de Separação**
-
-| **Campo**       | **Tipo**         | **Restrições** | **Valor default** |
-| ---             | ---              | ---            | ---               |
-| Materiais Separados	 |	Seleção Múltipla | Lista de itens do pedido | - |
-| Hora de Início | Hora | Formato 24h | - |
-| Hora de Término	|	Hora | > Hora de Início | - |
-
-
-| **Comandos**         |  **Destino**  | **Tipo**          |
-| ---                  | ---                            | ---               |
-| Concluir | Montagem |	default |
-| Reportar Problema	| Revisar Separação | cancel |
-
-
-
-**Atualizar Dashboard**
-
-| **Campo**       | **Tipo**         | **Restrições** | **Valor default** |
-| ---             | ---              | ---            | ---               |
-| Status do Pedido | Seleção Única | Em Andamento/Concluído/Atrasado | - |
-| Última Atualização | Data e Hora | Automático | - |
-| Responsável |	Caixa de Texto | Preenchimento automático | - |
-
-
-| **Comandos**         |  **Destino**  | **Tipo**          |
-| ---                  | ---                            | ---               |
-| Finalizar | Fim do Processo |	default |
-| Editar | Revisar Pedido | cancel |
