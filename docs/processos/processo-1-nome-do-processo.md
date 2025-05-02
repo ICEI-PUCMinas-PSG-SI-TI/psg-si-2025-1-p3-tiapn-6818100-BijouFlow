@@ -10,7 +10,7 @@
 
 - Automatizar a distribuição de credenciais
 
-![Fluxo de Gestão de Pedidos](docs/images/Exemplo-de-diagrama-colaborativo-BPMN-Página-1.jpg)
+![Fluxo de Cadastro de Funcionários](BPMN_CadastroFuncionario.png)
 
 
 
