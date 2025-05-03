@@ -9,7 +9,7 @@ Garantir precisão com fontes de dados centralizadas
 
 Oferecer flexibilidade na exportação e visualização
 
-![BPMN Geração de Relatórios]([docs/images/BPMN_GerarRelatorio.png](https://github.com/ICEI-PUCMinas-PSG-SI-TI/psg-si-2025-1-p3-tiapn-6818100-BijouFlow/blob/main/docs/images/BPMN_CadastroFuncionario.png))
+![BPMN Geração de Relatórios](https://github.com/ICEI-PUCMinas-PSG-SI-TI/psg-si-2025-1-p3-tiapn-6818100-BijouFlow/blob/main/docs/images/BPMN_GerarRelatorio.png?raw=true)
 
 
 #### Detalhamento das atividades
