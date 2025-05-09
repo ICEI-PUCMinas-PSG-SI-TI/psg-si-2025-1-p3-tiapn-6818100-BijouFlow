@@ -45,12 +45,10 @@ São protótipos usados em design de interface para sugerir a estrutura de um si
 
 ## Diagrama de Classes
 
-O diagrama de classes ilustra graficamente como será a estrutura do software, e como cada uma das classes da sua estrutura estarão interligadas. Essas classes servem de modelo para materializar os objetos que executarão na memória.
+Diagrama de classes inicial do sistema BijouFlow.
 
-As referências abaixo irão auxiliá-lo na geração do artefato “Diagrama de Classes”.
-
-> - [Diagramas de Classes - Documentação da IBM](https://www.ibm.com/docs/pt-br/rational-soft-arch/9.6.1?topic=diagrams-class)
-> - [O que é um diagrama de classe UML? | Lucidchart](https://www.lucidchart.com/pages/pt/o-que-e-diagrama-de-classe-uml)
+![Diagrama de Classes]([./images/DiagramaArquiteturaBijouFlow.png](https://github.com/ICEI-PUCMinas-PSG-SI-TI/psg-si-2025-1-p3-tiapn-6818100-BijouFlow/blob/main/docs/images/Diagrama%20de%20Classes%20-%20BijouFLow.png?raw=true
+))
 
 ## Modelo ER
 
