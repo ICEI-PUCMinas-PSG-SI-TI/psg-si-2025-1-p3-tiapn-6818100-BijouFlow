@@ -47,8 +47,8 @@ São protótipos usados em design de interface para sugerir a estrutura de um si
 
 Diagrama de classes inicial do sistema BijouFlow.
 
-![Diagrama de Classes]([./images/DiagramaArquiteturaBijouFlow.png](https://github.com/ICEI-PUCMinas-PSG-SI-TI/psg-si-2025-1-p3-tiapn-6818100-BijouFlow/blob/main/docs/images/Diagrama%20de%20Classes%20-%20BijouFLow.png?raw=true
-))
+![Diagrama de Classes](./images/DiagramaArquiteturaBijouFlow.png](https://github.com/ICEI-PUCMinas-PSG-SI-TI/psg-si-2025-1-p3-tiapn-6818100-BijouFlow/blob/main/docs/images/Diagrama%20de%20Classes%20-%20BijouFLow.png?raw=true
+)
 
 ## Modelo ER
 
