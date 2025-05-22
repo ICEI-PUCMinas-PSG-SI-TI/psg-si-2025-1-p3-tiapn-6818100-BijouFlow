@@ -3,19 +3,20 @@
 Oportunidades de Melhoria
 Este processo foi otimizado para:
 
-Reduzir em 75% o tempo de alocação manual
+- Reduzir em 75% o tempo de alocação manual
 
-Balancear automáticamente a carga de trabalho
+- Balancear automáticamente a carga de trabalho
 
-Garantir rastreabilidade completa das atribuições
+- Garantir rastreabilidade completa das atribuições
+
 
 ![BPMN Cadastro de Tarefas para Funcionários](nullAinda)
 
 
-#### Detalhamento das atividades
+#### Detalhamento das atividades  
 
 
-**Identificar Necessidade**
+  **Identificar Necessidade**
 
 | **Campo**       | **Tipo**         | **Restrições** | **Valor default** |
 | ---             | ---              | ---            | ---               |
@@ -26,18 +27,22 @@ Garantir rastreabilidade completa das atribuições
 | **Comandos**         |  **Destino**                   | **Tipo** |
 | ---                  | ---                            | ---      |
 | Continuar            | Selecionar Funcionário	 | default |
-| Cancelar             | Fim do Processo  | cancel  |
+| Cancelar             | Fim do Processo  | cancel  |  
 
-<br>
-**Selecionar Funcionário (Subprocesso Automatizado)**
+
+
+
+  **Selecionar Funcionário (Subprocesso Automatizado)**
 
 |**Fonte de Dado**| **Métrica Chave**|
 | ---             | ---              | 
 | Disponibilidade | Funcionário com < 5 tarefas pendentes|      
-| Responsabilidade | Funcionário que seja do cargo responsável pela tarefa|
-<br>
+| Responsabilidade | Funcionário que seja do cargo responsável pela tarefa|  
 
-**Confirmar Atribuição**
+
+
+
+  **Confirmar Atribuição**
 
 | **Campo**       | **Tipo**         | **Restrições** | **Valor default** |
 | ---             | ---              | ---            | ---               |
@@ -49,14 +54,16 @@ Garantir rastreabilidade completa das atribuições
 | **Comandos**         |  **Destino**                   | **Tipo** |
 | ---                  | ---                            | ---      |
 | Confirmar            | Atribuir Tarefa ao Funcionário | default |
-| Reatribuir           | Selecionar Funcionário         | cancel |
+| Reatribuir           | Selecionar Funcionário         | cancel |  
 
 
-**Atribuir Tarefa**
+
+
+  **Atribuir Tarefa**
 
 | **Método**       | **Gatilho**         | **Restrições** |
 | ---              | ---                 | ---            | 
-| Notificação Push | Imediato ao Confirmar	| "Nova tarefa: [tipo] - Prazo: [data]" |
+| Notificação Push | Imediato ao Confirmar	| "Nova tarefa: [tipo] - Prazo: [data]" |  
 
 
 | **Comandos**         |  **Destino**                   | **Tipo** |
