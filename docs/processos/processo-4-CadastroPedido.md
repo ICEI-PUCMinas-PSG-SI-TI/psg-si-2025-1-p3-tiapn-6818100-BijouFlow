@@ -1,74 +1,75 @@
-### 3.3.3 Processo 3 – Cadastro de Tarefas Para Funcionários
+### 3.3.4 Processo 4 – Cadastro de Pedidos
 
 <br>Oportunidades de Melhoria<br>
 
 <br>Este processo foi otimizado para:<br>
 
-- Reduzir em 75% o tempo de alocação manual
+- Reduzir em 80% erros manuais de digitação
 
-- Balancear automáticamente a carga de trabalho
+- Automatizar 100% a validação de estoque
 
-- Garantir rastreabilidade completa das atribuições
+- Aumentar a eficiência e rapidez na produção de pedidos
 
 
-<br>![BPMN Cadastro de Tarefas para Funcionários](nullAinda)<br>
+<br>![BPMN Cadastro de Pedidos](nullAinda)<br>
 
 
 #### Detalhamento das atividades  
 
-  <br>**Identificar Necessidade**<br>
+  <br>**Iniciar Pedido**<br>
 
 | **Campo**       | **Tipo**         | **Restrições** | **Valor default** |
 | ---             | ---              | ---            | ---               |
-| Tipo de Tarefa  | Seleção Única    | Separação/Montagem/Conferência | -  |
-| Prazo	          | Data e Hora      | Deve ser futuro |  -  |
+| Tipo de Cliente | Seleção Única    | Varejo/Atacado/Parceria | -  |
+| Origem do Pedido| Seleção Única    | Site/WhatsApp/Loja Física |  -  |
+| Tipo de Envio   | Seleção Única    | Promocional/Sedex/Retirar na loja |  -  |
 
 
 | **Comandos**         |  **Destino**                   | **Tipo** |
 | ---                  | ---                            | ---      |
-| Continuar            | Selecionar Funcionário	 | default |
+| Continuar            | Adicionar Itens	  | default |
 | Cancelar             | Fim do Processo  | cancel  |  
 
 
 
-
-  <br>**Selecionar Funcionário (Subprocesso Automatizado)**<br>
+  <br>**Adicionar Itens (Subprocesso)**<br>
 
 |**Fonte de Dado**| **Métrica Chave**|
 | ---             | ---              | 
-| Disponibilidade | Funcionário com < 5 tarefas pendentes|      
-| Responsabilidade | Funcionário que seja do cargo responsável pela tarefa|  
+| Busca de Produtos | Auto-Complete por referência/nome|      
+| Validação de Estoque | Verifica disponibilidade em tempo real do estoque |  
+| Cálculo do Preço | Aplica descontos por volume automáticamente |  
 
 
 
 
-  <br>**Confirmar Atribuição**<br>
+  <br>**Validar Pagamento**<br>
 
 | **Campo**       | **Tipo**         | **Restrições** | **Valor default** |
 | ---             | ---              | ---            | ---               |
-| Funcionário    | Seleção Única	| Lista com os funcionários respectivos e disponíveis para tarefa | -  |
-| Prioridade  | Seleção Única  | Baixa/Média/Urgente |  -  |
-| Observações | Área de Texto  | Máx. 1000 caracteres|  -  |
+| Status de Pagamento | Seleção Única	| Pagamento com status "Aprovado" | Em Análise |
+| Opções de Parcelamento | Máx. 5x para Alto Atacado | Valor > R$1.499 |  -  |
 
 
 | **Comandos**         |  **Destino**                   | **Tipo** |
 | ---                  | ---                            | ---      |
-| Confirmar            | Atribuir Tarefa ao Funcionário | default |
-| Reatribuir           | Selecionar Funcionário         | cancel |  
+| Confirmar            | Confirmar Pedido               | default  |
+| Cancelar             | Revisar Dados                  | cancel   |   
 
 
 
 
- <br>**Atribuir Tarefa**<br>
+ <br>**Confirmar Pedido**<br>
 
-| **Método**       | **Gatilho**         | **Restrições** |
-| ---              | ---                 | ---            | 
-| Notificação Push | Imediato ao Confirmar	| "Nova tarefa: [tipo] - Prazo: [data]" |  
+| **Ação**       | **Automação**        
+| ---              | ---                 |
+| Número do Pedido | Recebido do Site	(ex.: 12855) |
+| Disparo de Produção | Cria tarefas automáticamente de cada processo do pedido |
 
 
 | **Comandos**         |  **Destino**                   | **Tipo** |
 | ---                  | ---                            | ---      |
 | Finalizar            | Fim do Processo                | default  |
-| Reenviar             | Confirmar Atribuição           | cancel   |
+| Editar               | Adicionar Itens/Editar Itens  | cancel   |
 
 
