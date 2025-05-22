@@ -1,8 +1,8 @@
 ### 3.3.3 Processo 3 – Cadastro de Tarefas Para Funcionários
 
-Oportunidades de Melhoria
+<br>Oportunidades de Melhoria<br>
 
-  <br>Este processo foi otimizado para:<br>
+<br>Este processo foi otimizado para:<br>
 
 - Reduzir em 75% o tempo de alocação manual
 
@@ -11,11 +11,10 @@ Oportunidades de Melhoria
 - Garantir rastreabilidade completa das atribuições
 
 
-![BPMN Cadastro de Tarefas para Funcionários](nullAinda)
+<br>![BPMN Cadastro de Tarefas para Funcionários](nullAinda)<br>
 
 
 #### Detalhamento das atividades  
-
 
   <br>**Identificar Necessidade**<br>
 
