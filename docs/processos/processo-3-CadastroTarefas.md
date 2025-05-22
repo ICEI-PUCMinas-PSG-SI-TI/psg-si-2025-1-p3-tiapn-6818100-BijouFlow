@@ -1,7 +1,8 @@
 ### 3.3.3 Processo 3 – Cadastro de Tarefas Para Funcionários
 
 Oportunidades de Melhoria
-Este processo foi otimizado para:
+
+  <br>Este processo foi otimizado para:<br>
 
 - Reduzir em 75% o tempo de alocação manual
 
@@ -16,7 +17,7 @@ Este processo foi otimizado para:
 #### Detalhamento das atividades  
 
 
-  **Identificar Necessidade**
+  <br>**Identificar Necessidade**<br>
 
 | **Campo**       | **Tipo**         | **Restrições** | **Valor default** |
 | ---             | ---              | ---            | ---               |
@@ -32,7 +33,7 @@ Este processo foi otimizado para:
 
 
 
-  **Selecionar Funcionário (Subprocesso Automatizado)**
+  <br>**Selecionar Funcionário (Subprocesso Automatizado)**<br>
 
 |**Fonte de Dado**| **Métrica Chave**|
 | ---             | ---              | 
@@ -42,7 +43,7 @@ Este processo foi otimizado para:
 
 
 
-  **Confirmar Atribuição**
+  <br>**Confirmar Atribuição**<br>
 
 | **Campo**       | **Tipo**         | **Restrições** | **Valor default** |
 | ---             | ---              | ---            | ---               |
@@ -59,7 +60,7 @@ Este processo foi otimizado para:
 
 
 
-  **Atribuir Tarefa**
+ <br>**Atribuir Tarefa**<br>
 
 | **Método**       | **Gatilho**         | **Restrições** |
 | ---              | ---                 | ---            | 
