@@ -28,18 +28,14 @@ Garantir rastreabilidade completa das atribuições
 | Continuar            | Selecionar Funcionário	 | default |
 | Cancelar             | Fim do Processo  | cancel  |
 
-
-
-
+<br>
 **Selecionar Funcionário (Subprocesso Automatizado)**
 
 |**Fonte de Dado**| **Métrica Chave**|
 | ---             | ---              | 
 | Disponibilidade | Funcionário com < 5 tarefas pendentes|      
-| Responsabilidade | Funcionário que seja do cargo responsável pela tarefa|   
-
-
-
+| Responsabilidade | Funcionário que seja do cargo responsável pela tarefa|
+<br>
 
 **Confirmar Atribuição**
 
@@ -56,8 +52,6 @@ Garantir rastreabilidade completa das atribuições
 | Reatribuir           | Selecionar Funcionário         | cancel |
 
 
-
-
 **Atribuir Tarefa**
 
 | **Método**       | **Gatilho**         | **Restrições** |
@@ -69,5 +63,6 @@ Garantir rastreabilidade completa das atribuições
 | ---                  | ---                            | ---      |
 | Finalizar            | Fim do Processo                | default  |
 | Reenviar             | Confirmar Atribuição           | cancel   |
+
 
 
