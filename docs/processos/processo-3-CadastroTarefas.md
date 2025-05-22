@@ -29,12 +29,16 @@ Garantir rastreabilidade completa das atribuições
 | Cancelar             | Fim do Processo  | cancel  |
 
 
+
+
 **Selecionar Funcionário (Subprocesso Automatizado)**
 
 |**Fonte de Dado**| **Métrica Chave**|
 | ---             | ---              | 
 | Disponibilidade | Funcionário com < 5 tarefas pendentes|      
 | Responsabilidade | Funcionário que seja do cargo responsável pela tarefa|   
+
+
 
 
 **Confirmar Atribuição**
@@ -50,6 +54,8 @@ Garantir rastreabilidade completa das atribuições
 | ---                  | ---                            | ---      |
 | Confirmar            | Atribuir Tarefa ao Funcionário | default |
 | Reatribuir           | Selecionar Funcionário         | cancel |
+
+
 
 
 **Atribuir Tarefa**
