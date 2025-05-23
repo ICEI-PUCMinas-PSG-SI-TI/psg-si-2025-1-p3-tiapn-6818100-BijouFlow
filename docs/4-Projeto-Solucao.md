@@ -84,49 +84,101 @@ As referências abaixo irão auxiliá-lo na geração do artefato “Esquema Rel
 
 #### 4.3.3 Modelo Físico
 
-Insira aqui o script de criação das tabelas do banco de dados.
-
-Veja um exemplo:
+Script pra ciação da tabela do banco de dados
 
 <code>
 
- -- Criação da tabela Médico
-CREATE TABLE Medico (
-    MedCodigo INTEGER PRIMARY KEY,
-    MedNome VARCHAR(100)
+CREATE DATABASE bijouflow;
+USE bijouflow;
+
+-- Tabela: Cliente
+CREATE TABLE Cliente (
+    id_usuario CHAR(36) PRIMARY KEY,
+    nome VARCHAR(255) NOT NULL,
+    telefone VARCHAR(20),
+    endereco VARCHAR(255),
 );
 
-
--- Criação da tabela Paciente
-CREATE TABLE Paciente (
-    PacCodigo INTEGER PRIMARY KEY,
-    PacNome VARCHAR(100)
+-- Tabela: Gerente
+CREATE TABLE Gerente (
+    id_gerente CHAR(36) PRIMARY KEY,
+    nome VARCHAR(255) NOT NULL
 );
 
--- Criação da tabela Consulta
-CREATE TABLE Consulta (
-    ConCodigo INTEGER PRIMARY KEY,
-    MedCodigo INTEGER,
-    PacCodigo INTEGER,
-    Data DATE,
-    FOREIGN KEY (MedCodigo) REFERENCES Medico(MedCodigo),
-    FOREIGN KEY (PacCodigo) REFERENCES Paciente(PacCodigo)
+-- Tabela: Departamento
+CREATE TABLE Departamento (
+    id_departamento CHAR(36) PRIMARY KEY,
+    nome VARCHAR(100) NOT NULL,
+    id_gerente CHAR(36) NOT NULL,
+    FOREIGN KEY (id_gerente) REFERENCES Gerente(id_gerente)
 );
 
--- Criação da tabela Medicamento
-CREATE TABLE Medicamento (
-    MdcCodigo INTEGER PRIMARY KEY,
-    MdcNome VARCHAR(100)
+-- Tabela: Funcionario
+CREATE TABLE Funcionario (
+    id_funcionario CHAR(36) PRIMARY KEY,
+    nome VARCHAR(255) NOT NULL,
+    id_departamento CHAR(36) NOT NULL,
+    contratado BOOLEAN,
+    FOREIGN KEY (id_departamento) REFERENCES Departamento(id_departamento)
 );
 
--- Criação da tabela Prescricao
-CREATE TABLE Prescricao (
-    ConCodigo INTEGER,
-    MdcCodigo INTEGER,
-    Posologia VARCHAR(200),
-    PRIMARY KEY (ConCodigo, MdcCodigo),
-    FOREIGN KEY (ConCodigo) REFERENCES Consulta(ConCodigo),
-    FOREIGN KEY (MdcCodigo) REFERENCES Medicamento(MdcCodigo)
+-- Tabela: Fornecedor
+CREATE TABLE Fornecedor (
+    id_fornecedor CHAR(36) PRIMARY KEY,
+    nome VARCHAR(255) NOT NULL,
+    contato VARCHAR(100)
+);
+
+-- Tabela: Pedido
+CREATE TABLE Pedido (
+    id_pedido CHAR(36) PRIMARY KEY,
+    id_cliente CHAR(36) NOT NULL,
+    data TIMESTAMP,
+    status VARCHAR(50),
+    valor_total DECIMAL(10,2),
+    FOREIGN KEY (id_cliente) REFERENCES Cliente(id_usuario)
+);
+
+-- Tabela: Produto
+CREATE TABLE Produto (
+    id_produto CHAR(36) PRIMARY KEY,
+    id_pedido CHAR(36) NOT NULL,
+    descricao TEXT,
+    preco DECIMAL(10,2),
+    nome VARCHAR(255) NOT NULL,
+    FOREIGN KEY (id_pedido) REFERENCES Pedido(id_pedido)
+);
+
+-- Tabela: Material
+CREATE TABLE Material (
+    id_material CHAR(36) PRIMARY KEY,
+    id_produto CHAR(36) NOT NULL, 
+    id_fornecedor CHAR(36) NOT NULL,
+    nome VARCHAR(255) NOT NULL,
+    quantidade_estoque INT,
+    estoque_minimo INT,
+    FOREIGN KEY (id_produto) REFERENCES Produto(id_produto),
+    FOREIGN KEY (id_fornecedor) REFERENCES Fornecedor(id_fornecedor)
+);
+
+-- Tabela: Tarefa
+CREATE TABLE Tarefa (
+    id_tarefa CHAR(36) PRIMARY KEY,
+    id_pedido CHAR(36) NOT NULL, 
+    tipo VARCHAR(50),
+    status VARCHAR(50),
+    data_inicio TIMESTAMP,
+    data_conclusao TIMESTAMP,
+    FOREIGN KEY (id_pedido) REFERENCES Pedido(id_pedido)
+);
+
+-- Tabela de Junção para Funcionario (N) executa (M) Tarefa
+CREATE TABLE Funcionario_Executa_Tarefa (
+    id_funcionario CHAR(36) NOT NULL,
+    id_tarefa CHAR(36) NOT NULL,
+    PRIMARY KEY (id_funcionario, id_tarefa),
+    FOREIGN KEY (id_funcionario) REFERENCES Funcionario(id_funcionario),
+    FOREIGN KEY (id_tarefa) REFERENCES Tarefa(id_tarefa)
 );
 
 </code>
