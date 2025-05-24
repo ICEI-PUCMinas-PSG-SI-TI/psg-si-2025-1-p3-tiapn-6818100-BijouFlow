@@ -84,7 +84,7 @@ As referências abaixo irão auxiliá-lo na geração do artefato “Esquema Rel
 
 #### 4.3.3 Modelo Físico
 
-Script pra ciação da tabela do banco de dados
+Script pra criação da tabela do banco de dados
 
 <code>
 
