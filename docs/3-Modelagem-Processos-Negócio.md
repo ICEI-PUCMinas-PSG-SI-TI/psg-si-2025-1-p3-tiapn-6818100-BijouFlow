@@ -85,6 +85,10 @@ A solução materializa dois pilares estratégicos da LuxeBijoux: excelência op
 
 ### 3.3. Modelagem dos processos
 
-[Processo de Cadastro de Funcionários](./processos/processo-1-nome-do-processo.md "Detalhamento do Processo 1.")
+[Processo de Cadastro de Funcionários](./processos/processo-1-CadastroFuncionarios.md "Detalhamento do Processo 1.")
 
-[Processo de Geração de Relatórios](./processos/processo-2-nome-do-processo.md "Detalhamento do Processo 2.")
+[Processo de Geração de Relatórios](./processos/processo-2-GeracaoRelatorios.md "Detalhamento do Processo 2.")
+
+[Processo de Cadastro de Tarefas](./processos/processo-3-CadastroTarefas.md "Detalhamento do Processo 3.")
+
+[Processo de Cadastro de Pedidos](./processos/processo-4-CadastroPedido.md "Detalhamento do Processo 4.")
