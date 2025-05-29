@@ -28,8 +28,25 @@ O BijouFlow é uma solução integrada para gestão de pedidos e produção da L
 
 O sistema BijouFlow para a resolução de todos os problemas que foram encontrados na empresa LuxeBijoux, foi pensado os seguintes Wireframes iniciais para ser desenvolvido e posteriormente implementados para resolução dos problemas.
 
-![Exemplo de Wireframe](images/wireframe-example.png)
 
+*Tela de cadastro*
+![Tela de Cadastro](images/wireframe-example.png)
+
+*Tela de login*
+![Tela de Login](images/wireframe-example.png)
+
+*Home page funcionário logado*
+![Tela de Início Funcionário](images/HomePage_Funcionario_BijouFlow.png)
+
+*Tela de tarefas*
+![Tela de Tarefas](images/wireframe-example.png)
+
+*Tela de cadastro de pedidos*
+![Tela de Cadastro de Pedidos](images/wireframe-example.png)
+
+
+*Tela de cadastro de peças*
+![Tela de Cadastro de Peças](images/wireframe-example.png)
  
 
 ## Diagrama de Classes
