@@ -1,0 +1,133 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BijouFlow - Cadastro de Pedidos</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="main-layout">
+        <aside class="sidebar">
+            <div class="logo">BijouFlow</div>
+            <a href="home.html" class="button-link">Página Inicial</a>
+            <a href="tarefas.html" class="button-link">Meu Trabalho</a>
+            <a href="cadastro-pecas.html" class="button-link">Estoque/Peças</a>
+            <a href="cadastro-pedidos.html" class="button-link">Pedidos</a>
+            <a href="relatorios.html" class="button-link">Relatórios</a>
+            <a href="login.html" class="button-link" style="margin-top: auto;">Sair (HS)</a>
+        </aside>
+        <div class="content-area">
+            <header style="background:none; color:#333; text-align:left; padding:0 0 20px 0;">
+                <h2 style="margin:5px 0 0 0;">Tela de Cadastro de Pedidos</h2>
+            </header>
+
+            <form id="formCadastroPedido">
+                <div class="form-row">
+                    <section style="flex:1; border:1px solid #eee; padding:15px; border-radius:5px;">
+                        <h3>Informações do Cliente</h3>
+                        <div class="form-group">
+                            <label for="clienteNome">Nome*</label>
+                            <input type="text" id="clienteNome" name="clienteNome" required>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="clienteCpf">CPF*</label>
+                                <input type="text" id="clienteCpf" name="clienteCpf" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="clienteDataNasc">Data de Nascimento*</label>
+                                <input type="date" id="clienteDataNasc" name="clienteDataNasc" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="clienteTelefone">Telefone*</label>
+                                <input type="text" id="clienteTelefone" name="clienteTelefone">
+                            </div>
+                            <div class="form-group">
+                                <label for="clienteTipo">Tipo de Cliente</label>
+                                <select id="clienteTipo" name="clienteTipo">
+                                    <option value="varejo">Varejo</option>
+                                    <option value="atacado">Atacado</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="clienteEmail">Email*</label>
+                            <input type="email" id="clienteEmail" name="clienteEmail" required>
+                        </div>
+                        <h4>Endereço</h4>
+                        <div class="form-group">
+                            <label for="clienteRua">Rua</label>
+                            <input type="text" id="clienteRua" name="clienteRua">
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group" style="flex:1">
+                                <label for="clienteNumero">Número</label>
+                                <input type="text" id="clienteNumero" name="clienteNumero">
+                            </div>
+                            <div class="form-group" style="flex:2">
+                                <label for="clienteBairro">Bairro</label>
+                                <input type="text" id="clienteBairro" name="clienteBairro">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="clienteCep">CEP</label>
+                                <input type="text" id="clienteCep" name="clienteCep">
+                            </div>
+                            <div class="form-group">
+                                <label for="clienteCidade">Cidade</label>
+                                <input type="text" id="clienteCidade" name="clienteCidade">
+                            </div>
+                            <div class="form-group">
+                                <label for="clienteUf">UF</label>
+                                <select id="clienteUf" name="clienteUf"></select> <!-- Popular com JS -->
+                            </div>
+                        </div>
+                    </section>
+
+                    <section style="flex:1; border:1px solid #eee; padding:15px; border-radius:5px;">
+                        <h3>Informações do Pedido</h3>
+                        <div class="form-group">
+                            <label for="pedidoId">#12819 (ID do Pedido)</label>
+                            <input type="text" id="pedidoId" name="pedidoId" value="#12819" readonly>
+                        </div>
+                        <div class="form-group">
+                            <label for="pedidoTipoEnvio">Tipo de Envio</label>
+                            <select id="pedidoTipoEnvio" name="pedidoTipoEnvio">
+                                <option value="padrao">Padrão</option>
+                                <option value="expresso">Expresso</option>
+                                <option value="retirada">Retirada</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="pedidoStatus">Status</label>
+                            <select id="pedidoStatus" name="pedidoStatus">
+                                <option value="pendente">Pendente</option>
+                                <option value="processando">Processando</option>
+                                <option value="enviado">Enviado</option>
+                                <option value="entregue">Entregue</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Lista de Itens do Pedido</label>
+                            <div id="listaItensPedido" style="min-height: 100px; border:1px dashed #ccc; padding:10px; text-align:center;">
+                                (Itens serão listados aqui)
+                            </div>
+                            <button type="button" id="btnAdicionarItem" style="margin-top:10px;">Adicionar Itens</button>
+                        </div>
+                    </section>
+                </div>
+
+                <div class="button-group" style="margin-top: 30px;">
+                    <button type="button" class="cancel" onclick="history.back();">Voltar</button>
+                    <button type="submit">Salvar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="js/cadastroPedidos.js"></script>
+</body>
+</html>

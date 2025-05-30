@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BijouFlow - Tarefas</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="main-layout">
+        <aside class="sidebar">
+            <div class="logo">BijouFlow</div>
+            <a href="home.html" class="button-link">Página Inicial</a>
+            <a href="tarefas.html" class="button-link">Meu Trabalho</a>
+            <a href="cadastro-pecas.html" class="button-link">Estoque/Peças</a>
+            <a href="cadastro-pedidos.html" class="button-link">Pedidos</a>
+            <a href="relatorios.html" class="button-link">Relatórios</a>
+            <a href="login.html" class="button-link" style="margin-top: auto;">Sair (HS)</a>
+        </aside>
+        <div class="content-area">
+            <header style="background:none; color:#333; text-align:left; padding:0 0 20px 0; display:flex; justify-content:space-between; align-items:center;">
+                <h2 style="margin:5px 0 0 0;">Quadro Principal de Tarefas</h2>
+                <div>
+                    
+                    <span>🔍 👤 ⚖️ ⇅</span>
+                </div>
+            </header>
+
+            <div class="kanban-board">
+                <div class="kanban-column">
+                    <h3>Separação</h3>
+                    <div class="kanban-card">
+                        <p class="pedido-id">Pedido #12310</p>
+                        <p class="data">Data: DD/MM/AAAA</p>
+                        <p>Descrição da tarefa de separação...</p>
+                    </div>
+                    
+                </div>
+                <div class="kanban-column">
+                    <h3>Montagem</h3>
+                    
+                </div>
+                <div class="kanban-column">
+                    <h3>Concluído/Enviado</h3>
+                    
+                </div>
+                <div class="kanban-column">
+                    <h3>Aguardando Material</h3>
+                    <div class="kanban-card">
+                        <p class="pedido-id">Pedido #12451</p>
+                        <p class="data">Data: DD/MM/AAAA</p>
+                        <p>Lista de materiais que faltam para conclusão.</p>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/tarefas.js"></script>
+</body>
+</html>

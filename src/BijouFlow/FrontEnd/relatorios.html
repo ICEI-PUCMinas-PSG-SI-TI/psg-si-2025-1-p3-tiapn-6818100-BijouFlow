@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BijouFlow - Relatórios</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="main-layout">
+        <aside class="sidebar">
+            <div class="logo">BijouFlow</div>
+            <a href="home.html" class="button-link">Página Inicial</a>
+            <a href="tarefas.html" class="button-link">Meu Trabalho</a>
+            <a href="cadastro-pecas.html" class="button-link">Estoque/Peças</a>
+            <a href="cadastro-pedidos.html" class="button-link">Pedidos</a>
+            <a href="relatorios.html" class="button-link">Relatórios</a>
+            <a href="login.html" class="button-link" style="margin-top: auto;">Sair (HS)</a>
+        </aside>
+        <div class="content-area">
+            <header style="background:none; color:#333; text-align:left; padding:0 0 20px 0; display:flex; justify-content:space-between; align-items:center; border-bottom:1px solid #eee; margin-bottom:20px;">
+                <h2 style="margin:5px 0 0 0;">Tela de Relatórios</h2>
+                <div>
+                    <label for="dataInicial">Data Inicial:</label>
+                    <input type="date" id="dataInicial" name="dataInicial">
+                    <label for="dataFinal" style="margin-left:10px;">Data Final:</label>
+                    <input type="date" id="dataFinal" name="dataFinal">
+                    <button style="margin-left:10px;">Filtros</button>
+                </div>
+            </header>
+
+            <div class="report-sections">
+                <section class="report-section">
+                    <h4>Tarefas Concluídas</h4>
+                    <p>Detalhes do relatório:</p>
+                    <ul>
+                        <li>Tarefas totais atribuídas</li>
+                        <li>Funcionário que mais realizou tarefas + Quantidade</li>
+                    </ul>
+                </section>
+                <section class="report-section">
+                    <h4>Pedidos Finalizados</h4>
+                    <p>Detalhes do relatório:</p>
+                    <ul>
+                        <li>Quantidade de pedidos finalizados</li>
+                        <li>Quantidade de pedidos aguardando material</li>
+                        <li>Quantidade de pedidos cancelados</li>
+                        <li>Item mais vendido</li>
+                        <li>Forma de envio mais requisitada</li>
+                    </ul>
+                </section>
+                <section class="report-section">
+                    <h4>Materiais Repostos</h4>
+                    <p>Detalhes do relatório:</p>
+                    <ul>
+                        <li>Peça mais requisitada</li>
+                        <li>Quantidade em estoque de materiais</li>
+                        <li>Peça que menos foi requisitada</li>
+                    </ul>
+                </section>
+                <section class="report-section">
+                    <h4>Clientes Registrados</h4>
+                    <p>Detalhes do relatório:</p>
+                    <ul>
+                        <li>Novos clientes registrados</li>
+                        <li>Clientes removidos</li>
+                        <li>Quantidade de clientes atacadistas</li>
+                        <li>Quantidade de clientes varejo</li>
+                        <li>Média de clientes por mensais</li>
+                    </ul>
+                </section>
+            </div>
+            <div class="button-group" style="margin-top: 30px;">
+                <button type="button" class="cancel" onclick="history.back();">Cancelar</button>
+                <button type="button" id="btnGerarRelatorio">Gerar</button>
+            </div>
+        </div>
+    </div>
+    <script src="js/relatorios.js"></script>
+</body>
+</html>
