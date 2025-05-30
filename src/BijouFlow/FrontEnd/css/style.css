@@ -1,0 +1,248 @@
+﻿/* css/style.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex-grow: 1;
+}
+
+.login-container, .cadastro-container {
+    width: 100%;
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    text-align: center;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 15px 0;
+    text-align: center;
+}
+
+    header h1 {
+        margin: 0;
+    }
+
+nav {
+    display: flex;
+    background-color: #444;
+}
+
+    nav a {
+        color: white;
+        padding: 14px 20px;
+        text-decoration: none;
+        text-align: center;
+    }
+
+        nav a:hover {
+            background-color: #555;
+        }
+
+.main-layout {
+    display: flex;
+}
+
+.sidebar {
+    width: 200px;
+    background-color: #f0f0f0;
+    padding: 15px;
+    min-height: calc(100vh - 50px); 
+}
+
+    .sidebar .logo {
+        font-size: 1.5em;
+        font-weight: bold;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .sidebar button, .sidebar a.button-link {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        background-color: #ddd;
+        border: none;
+        cursor: pointer;
+        text-align: left;
+        text-decoration: none;
+        color: #333;
+        border-radius: 4px;
+    }
+
+        .sidebar button:hover, .sidebar a.button-link:hover {
+            background-color: #ccc;
+        }
+
+
+.content-area {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: #fff;
+}
+
+h2, h3 {
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+    .form-group label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+    }
+
+    .form-group input[type="text"],
+    .form-group input[type="password"],
+    .form-group input[type="email"],
+    .form-group input[type="number"],
+    .form-group input[type="date"],
+    .form-group select,
+    .form-group textarea {
+        width: calc(100% - 22px);
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+    .form-group textarea {
+        min-height: 100px;
+        resize: vertical;
+    }
+
+.form-row {
+    display: flex;
+    gap: 15px;
+}
+
+    .form-row .form-group {
+        flex: 1;
+    }
+
+
+button, input[type="submit"] {
+    padding: 10px 15px;
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+    button:hover, input[type="submit"]:hover {
+        background-color: #4cae4c;
+    }
+
+    button.cancel {
+        background-color: #f0ad4e;
+    }
+
+        button.cancel:hover {
+            background-color: #eea236;
+        }
+
+.button-group {
+    margin-top: 20px;
+    text-align: right;
+}
+
+    .button-group button {
+        margin-left: 10px;
+    }
+
+.kanban-board {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto; 
+}
+
+.kanban-column {
+    background-color: #e9ecef;
+    padding: 15px;
+    border-radius: 5px;
+    min-width: 250px; 
+    flex: 1;
+}
+
+    .kanban-column h3 {
+        margin-top: 0;
+        font-size: 1.1em;
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+    }
+
+.kanban-card {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 3px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    margin-bottom: 10px;
+}
+
+    .kanban-card p {
+        margin: 5px 0;
+        font-size: 0.9em;
+    }
+
+    .kanban-card .pedido-id {
+        font-weight: bold;
+    }
+
+    .kanban-card .data {
+        font-size: 0.8em;
+        color: #777;
+    }
+
+.report-sections {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.report-section {
+    background-color: #f9f9f9;
+    border: 1px solid #eee;
+    padding: 15px;
+    border-radius: 5px;
+    flex: 1 1 250px;
+    min-width: 250px;
+}
+
+    .report-section h4 {
+        margin-top: 0;
+        border-bottom: 1px solid #ddd;
+        padding-bottom: 5px;
+    }
+
+    .report-section ul {
+        list-style: disc;
+        padding-left: 20px;
+        font-size: 0.9em;
+    }

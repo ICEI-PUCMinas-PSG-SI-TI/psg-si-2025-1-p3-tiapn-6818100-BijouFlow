@@ -1,0 +1,104 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BijouFlow - Home</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        
+        .home-content {
+            display: flex;
+            gap: 20px;
+        }
+
+        .main-feed {
+            flex: 3;
+        }
+
+        .support-area {
+            flex: 1;
+            background-color: #f9f9f9;
+            padding: 15px;
+            border-radius: 5px;
+        }
+
+        .visited-card, .feed-item {
+            border: 1px solid #eee;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+        }
+
+            .visited-card .placeholder-img {
+                width: 100%;
+                height: 150px;
+                background-color: #ddd;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-bottom: 10px;
+            }
+
+            .feed-item .avatar {
+                width: 40px;
+                height: 40px;
+                background-color: #ccc;
+                border-radius: 50%;
+                display: inline-block;
+                vertical-align: middle;
+                margin-right: 10px;
+            }
+    </style>
+</head>
+<body>
+    <div class="main-layout">
+        <aside class="sidebar">
+            <div class="logo">BijouFlow</div>
+            <a href="home.html" class="button-link">Página Inicial</a>
+            <a href="tarefas.html" class="button-link">Meu Trabalho</a>
+            <a href="cadastro-pecas.html" class="button-link">Estoque/Peças</a>
+            <a href="cadastro-pedidos.html" class="button-link">Pedidos</a>
+            <a href="relatorios.html" class="button-link">Relatórios</a>
+            <a href="login.html" class="button-link" style="margin-top: auto;">Sair (HS)</a>
+        </aside>
+        <div class="content-area">
+            <header style="background:none; color:#333; text-align:left; padding:0 0 20px 0; border-bottom:1px solid #eee; margin-bottom:20px;">
+                <h2>Olá, [Nome do Usuário]!</h2>
+                <p>Acesse suas tarefas recentes e sua caixa de entrada.</p>
+            </header>
+            <div class="home-content">
+                <section class="main-feed">
+                    <h3>Visitado Recentemente</h3>
+                    <div class="visited-card">
+                        <div class="placeholder-img"><span>(Imagem Tarefa)</span></div>
+                        <h4>Tarefa 1</h4>
+                        <p>Descrição da tarefa visitada recentemente.</p>
+                    </div>
+
+                    <h3>Feed de atualizações (caixa de entrada)</h3>
+                    <div class="feed-item">
+                        <span class="avatar"></span>
+                        <strong>Thais Gerente</strong>
+                        <p>Descrição da tarefa adicionada recentemente.</p>
+                        <small>Data Hora</small>
+                    </div>
+                    <div class="feed-item">
+                        <span class="avatar"></span>
+                        <strong>Sistema</strong>
+                        <p>Novo pedido #12345 recebido.</p>
+                        <small>Data Hora</small>
+                    </div>
+                </section>
+                <aside class="support-area">
+                    <h4>Área de suporte</h4>
+                    <button style="width:100%; margin-bottom:10px; background-color: #eee; color:#333;">Central de ajuda</button>
+                    <button style="width:100%; margin-bottom:10px; background-color: #eee; color:#333;">Reportar problema</button>
+                    <button style="width:100%; background-color: #555;">Ajuda</button>
+                </aside>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
