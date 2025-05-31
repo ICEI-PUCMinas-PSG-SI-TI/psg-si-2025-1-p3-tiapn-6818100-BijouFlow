@@ -11,7 +11,7 @@
 - Garantir rastreabilidade completa das atribuições
 
 
-<br>![BPMN Cadastro de Tarefas para Funcionários](nullAinda)<br>
+![Cadastro de Tarefas](https://github.com/ICEI-PUCMinas-PSG-SI-TI/psg-si-2025-1-p3-tiapn-6818100-BijouFlow/blob/main/docs/images/cadastro-de-tarefas.png?raw=true)
 
 
 #### Detalhamento das atividades  
