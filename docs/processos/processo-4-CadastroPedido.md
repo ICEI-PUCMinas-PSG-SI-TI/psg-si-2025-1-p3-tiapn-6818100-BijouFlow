@@ -11,7 +11,7 @@
 - Aumentar a eficiência e rapidez na produção de pedidos
 
 
-<br>![BPMN Cadastro de Pedidos](nullAinda)<br>
+![Cadastro de Pedido](https://github.com/ICEI-PUCMinas-PSG-SI-TI/psg-si-2025-1-p3-tiapn-6818100-BijouFlow/blob/main/docs/images/cadastro-de-pedido.png?raw=true)
 
 
 #### Detalhamento das atividades  
