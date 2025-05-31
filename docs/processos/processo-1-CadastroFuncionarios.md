@@ -2,7 +2,7 @@
 
 **Oportunidades de Melhoria**
 
-- Este processo foi projetado para:
+Este processo foi projetado para:
 
 - Reduzir em 90% os erros de cadastro manual
 
