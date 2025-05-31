@@ -3,11 +3,11 @@
 Oportunidades de Melhoria
 Este processo foi otimizado para:
 
-Reduzir em 85% o tempo manual de compilação de dados
+- Reduzir em 85% o tempo manual de compilação de dados
 
-Garantir precisão com fontes de dados centralizadas
+- Garantir precisão com fontes de dados centralizadas
 
-Oferecer flexibilidade na exportação e visualização
+- Oferecer flexibilidade na exportação e visualização
 
 ![BPMN Geração de Relatórios](https://github.com/ICEI-PUCMinas-PSG-SI-TI/psg-si-2025-1-p3-tiapn-6818100-BijouFlow/blob/main/docs/images/bpmn-gerar-relatorio.png?raw=true)
 
