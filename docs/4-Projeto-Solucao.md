@@ -301,32 +301,6 @@ protected override void Up(MigrationBuilder migrationBuilder)
         table: "Tarefas",
         column: "FuncionarioId");
 }
-
-/// <inheritdoc />
-protected override void Down(MigrationBuilder migrationBuilder)
-{
-    migrationBuilder.DropTable(
-        name: "Clientes");
-
-    migrationBuilder.DropTable(
-        name: "PedidoPeca");
-
-    migrationBuilder.DropTable(
-        name: "Tarefas");
-
-    migrationBuilder.DropTable(
-        name: "Pecas");
-
-    migrationBuilder.DropTable(
-        name: "Pedidos");
-
-    migrationBuilder.DropTable(
-        name: "Funcionarios");
-
-    migrationBuilder.DropTable(
-        name: "Estoque");
-}
-}
 </code>
 
 
