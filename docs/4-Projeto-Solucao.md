@@ -110,103 +110,224 @@ Script pra criação da tabela do banco de dados
 
 <code>
 
-CREATE DATABASE bijouflow;
-USE bijouflow;
+protected override void Up(MigrationBuilder migrationBuilder)
+{
+    migrationBuilder.AlterDatabase()
+        .Annotation("MySql:CharSet", "utf8mb4");
 
--- Tabela: Cliente
-CREATE TABLE Cliente (
-    id_usuario CHAR(36) PRIMARY KEY,
-    nome VARCHAR(255) NOT NULL,
-    telefone VARCHAR(20),
-    endereco VARCHAR(255),
-);
+    migrationBuilder.CreateTable(
+        name: "Clientes",
+        columns: table => new
+        {
+            ClienteId = table.Column<int>(type: "int", nullable: false)
+                .Annotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn),
+            Nome = table.Column<string>(type: "longtext", nullable: false)
+                .Annotation("MySql:CharSet", "utf8mb4"),
+            Cpf = table.Column<string>(type: "varchar(14)", maxLength: 14, nullable: false)
+                .Annotation("MySql:CharSet", "utf8mb4"),
+            Telefone = table.Column<string>(type: "longtext", nullable: true)
+                .Annotation("MySql:CharSet", "utf8mb4"),
+            Logradouro = table.Column<string>(type: "longtext", nullable: true)
+                .Annotation("MySql:CharSet", "utf8mb4"),
+            Numero = table.Column<string>(type: "longtext", nullable: true)
+                .Annotation("MySql:CharSet", "utf8mb4"),
+            Bairro = table.Column<string>(type: "longtext", nullable: true)
+                .Annotation("MySql:CharSet", "utf8mb4"),
+            Cidade = table.Column<string>(type: "longtext", nullable: true)
+                .Annotation("MySql:CharSet", "utf8mb4"),
+            Estado = table.Column<int>(type: "int", nullable: true),
+            Cep = table.Column<string>(type: "longtext", nullable: true)
+                .Annotation("MySql:CharSet", "utf8mb4"),
+            DataCadastro = table.Column<DateTime>(type: "datetime(6)", nullable: false),
+            DataUpdate = table.Column<DateTime>(type: "datetime(6)", nullable: false)
+        },
+        constraints: table =>
+        {
+            table.PrimaryKey("PK_Clientes", x => x.ClienteId);
+        })
+        .Annotation("MySql:CharSet", "utf8mb4");
 
--- Tabela: Gerente
-CREATE TABLE Gerente (
-    id_gerente CHAR(36) PRIMARY KEY,
-    nome VARCHAR(255) NOT NULL
-);
+    migrationBuilder.CreateTable(
+        name: "Estoque",
+        columns: table => new
+        {
+            EstoqueId = table.Column<int>(type: "int", nullable: false)
+                .Annotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn),
+            Nome = table.Column<string>(type: "longtext", nullable: false)
+                .Annotation("MySql:CharSet", "utf8mb4"),
+            DataUpdate = table.Column<DateTime>(type: "datetime(6)", nullable: false)
+        },
+        constraints: table =>
+        {
+            table.PrimaryKey("PK_Estoque", x => x.EstoqueId);
+        })
+        .Annotation("MySql:CharSet", "utf8mb4");
 
--- Tabela: Departamento
-CREATE TABLE Departamento (
-    id_departamento CHAR(36) PRIMARY KEY,
-    nome VARCHAR(100) NOT NULL,
-    id_gerente CHAR(36) NOT NULL,
-    FOREIGN KEY (id_gerente) REFERENCES Gerente(id_gerente)
-);
+    migrationBuilder.CreateTable(
+        name: "Funcionarios",
+        columns: table => new
+        {
+            FuncionarioId = table.Column<int>(type: "int", nullable: false)
+                .Annotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn),
+            Nome = table.Column<string>(type: "longtext", nullable: false)
+                .Annotation("MySql:CharSet", "utf8mb4"),
+            Idade = table.Column<int>(type: "int", nullable: false),
+            Email = table.Column<string>(type: "longtext", nullable: true)
+                .Annotation("MySql:CharSet", "utf8mb4"),
+            Telefone = table.Column<string>(type: "longtext", nullable: true)
+                .Annotation("MySql:CharSet", "utf8mb4"),
+            Cargo = table.Column<string>(type: "longtext", nullable: false)
+                .Annotation("MySql:CharSet", "utf8mb4"),
+            DataCadastro = table.Column<DateTime>(type: "datetime(6)", nullable: false),
+            DataUpdate = table.Column<DateTime>(type: "datetime(6)", nullable: false)
+        },
+        constraints: table =>
+        {
+            table.PrimaryKey("PK_Funcionarios", x => x.FuncionarioId);
+        })
+        .Annotation("MySql:CharSet", "utf8mb4");
 
--- Tabela: Funcionario
-CREATE TABLE Funcionario (
-    id_funcionario CHAR(36) PRIMARY KEY,
-    nome VARCHAR(255) NOT NULL,
-    id_departamento CHAR(36) NOT NULL,
-    contratado BOOLEAN,
-    FOREIGN KEY (id_departamento) REFERENCES Departamento(id_departamento)
-);
+    migrationBuilder.CreateTable(
+        name: "Pedidos",
+        columns: table => new
+        {
+            PedidoId = table.Column<int>(type: "int", nullable: false)
+                .Annotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn),
+            NumeroPedido = table.Column<int>(type: "int", nullable: false),
+            DataCadastro = table.Column<DateTime>(type: "datetime(6)", nullable: false),
+            DataFinal = table.Column<DateTime>(type: "datetime(6)", nullable: false)
+        },
+        constraints: table =>
+        {
+            table.PrimaryKey("PK_Pedidos", x => x.PedidoId);
+        })
+        .Annotation("MySql:CharSet", "utf8mb4");
 
--- Tabela: Fornecedor
-CREATE TABLE Fornecedor (
-    id_fornecedor CHAR(36) PRIMARY KEY,
-    nome VARCHAR(255) NOT NULL,
-    contato VARCHAR(100)
-);
+    migrationBuilder.CreateTable(
+        name: "Pecas",
+        columns: table => new
+        {
+            PecaId = table.Column<int>(type: "int", nullable: false)
+                .Annotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn),
+            EstoqueId = table.Column<int>(type: "int", nullable: false),
+            Nome = table.Column<string>(type: "longtext", nullable: true)
+                .Annotation("MySql:CharSet", "utf8mb4"),
+            Preco = table.Column<decimal>(type: "decimal(65,30)", nullable: false),
+            DescontoPorcentagem = table.Column<decimal>(type: "decimal(65,30)", nullable: false),
+            QuantidadeDisponivel = table.Column<int>(type: "int", nullable: false),
+            Imagem = table.Column<string>(type: "varchar(100)", maxLength: 100, nullable: true)
+                .Annotation("MySql:CharSet", "utf8mb4"),
+            Descricao = table.Column<string>(type: "varchar(200)", maxLength: 200, nullable: true)
+                .Annotation("MySql:CharSet", "utf8mb4"),
+            DataCadastro = table.Column<DateTime>(type: "datetime(6)", nullable: false),
+            DataUpdate = table.Column<DateTime>(type: "datetime(6)", nullable: false)
+        },
+        constraints: table =>
+        {
+            table.PrimaryKey("PK_Pecas", x => x.PecaId);
+            table.ForeignKey(
+                name: "FK_Pecas_Estoque_EstoqueId",
+                column: x => x.EstoqueId,
+                principalTable: "Estoque",
+                principalColumn: "EstoqueId",
+                onDelete: ReferentialAction.Cascade);
+        })
+        .Annotation("MySql:CharSet", "utf8mb4");
 
--- Tabela: Pedido
-CREATE TABLE Pedido (
-    id_pedido CHAR(36) PRIMARY KEY,
-    id_cliente CHAR(36) NOT NULL,
-    data TIMESTAMP,
-    status VARCHAR(50),
-    valor_total DECIMAL(10,2),
-    FOREIGN KEY (id_cliente) REFERENCES Cliente(id_usuario)
-);
+    migrationBuilder.CreateTable(
+        name: "Tarefas",
+        columns: table => new
+        {
+            TarefaId = table.Column<int>(type: "int", nullable: false)
+                .Annotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn),
+            Status = table.Column<string>(type: "longtext", nullable: false)
+                .Annotation("MySql:CharSet", "utf8mb4"),
+            Descricao = table.Column<string>(type: "longtext", nullable: false)
+                .Annotation("MySql:CharSet", "utf8mb4"),
+            DataAtribuicao = table.Column<DateTime>(type: "datetime(6)", nullable: false),
+            FuncionarioId = table.Column<int>(type: "int", nullable: false)
+        },
+        constraints: table =>
+        {
+            table.PrimaryKey("PK_Tarefas", x => x.TarefaId);
+            table.ForeignKey(
+                name: "FK_Tarefas_Funcionarios_FuncionarioId",
+                column: x => x.FuncionarioId,
+                principalTable: "Funcionarios",
+                principalColumn: "FuncionarioId",
+                onDelete: ReferentialAction.Restrict);
+        })
+        .Annotation("MySql:CharSet", "utf8mb4");
 
--- Tabela: Produto
-CREATE TABLE Produto (
-    id_produto CHAR(36) PRIMARY KEY,
-    id_pedido CHAR(36) NOT NULL,
-    descricao TEXT,
-    preco DECIMAL(10,2),
-    nome VARCHAR(255) NOT NULL,
-    FOREIGN KEY (id_pedido) REFERENCES Pedido(id_pedido)
-);
+    migrationBuilder.CreateTable(
+        name: "PedidoPeca",
+        columns: table => new
+        {
+            PedidoId = table.Column<int>(type: "int", nullable: false),
+            PecaId = table.Column<int>(type: "int", nullable: false),
+            Quantidade = table.Column<int>(type: "int", nullable: false),
+            PrecoUnitario = table.Column<decimal>(type: "decimal(65,30)", nullable: false)
+        },
+        constraints: table =>
+        {
+            table.PrimaryKey("PK_PedidoPeca", x => new { x.PedidoId, x.PecaId });
+            table.ForeignKey(
+                name: "FK_PedidoPeca_Pecas_PecaId",
+                column: x => x.PecaId,
+                principalTable: "Pecas",
+                principalColumn: "PecaId",
+                onDelete: ReferentialAction.Cascade);
+            table.ForeignKey(
+                name: "FK_PedidoPeca_Pedidos_PedidoId",
+                column: x => x.PedidoId,
+                principalTable: "Pedidos",
+                principalColumn: "PedidoId",
+                onDelete: ReferentialAction.Cascade);
+        })
+        .Annotation("MySql:CharSet", "utf8mb4");
 
--- Tabela: Material
-CREATE TABLE Material (
-    id_material CHAR(36) PRIMARY KEY,
-    id_produto CHAR(36) NOT NULL, 
-    id_fornecedor CHAR(36) NOT NULL,
-    nome VARCHAR(255) NOT NULL,
-    quantidade_estoque INT,
-    estoque_minimo INT,
-    FOREIGN KEY (id_produto) REFERENCES Produto(id_produto),
-    FOREIGN KEY (id_fornecedor) REFERENCES Fornecedor(id_fornecedor)
-);
+    migrationBuilder.CreateIndex(
+        name: "IX_Pecas_EstoqueId",
+        table: "Pecas",
+        column: "EstoqueId");
 
--- Tabela: Tarefa
-CREATE TABLE Tarefa (
-    id_tarefa CHAR(36) PRIMARY KEY,
-    id_pedido CHAR(36) NOT NULL, 
-    tipo VARCHAR(50),
-    status VARCHAR(50),
-    data_inicio TIMESTAMP,
-    data_conclusao TIMESTAMP,
-    FOREIGN KEY (id_pedido) REFERENCES Pedido(id_pedido)
-);
+    migrationBuilder.CreateIndex(
+        name: "IX_PedidoPeca_PecaId",
+        table: "PedidoPeca",
+        column: "PecaId");
 
--- Tabela de Junção para Funcionario (N) executa (M) Tarefa
-CREATE TABLE Funcionario_Executa_Tarefa (
-    id_funcionario CHAR(36) NOT NULL,
-    id_tarefa CHAR(36) NOT NULL,
-    PRIMARY KEY (id_funcionario, id_tarefa),
-    FOREIGN KEY (id_funcionario) REFERENCES Funcionario(id_funcionario),
-    FOREIGN KEY (id_tarefa) REFERENCES Tarefa(id_tarefa)
-);
+    migrationBuilder.CreateIndex(
+        name: "IX_Tarefas_FuncionarioId",
+        table: "Tarefas",
+        column: "FuncionarioId");
+}
 
+/// <inheritdoc />
+protected override void Down(MigrationBuilder migrationBuilder)
+{
+    migrationBuilder.DropTable(
+        name: "Clientes");
+
+    migrationBuilder.DropTable(
+        name: "PedidoPeca");
+
+    migrationBuilder.DropTable(
+        name: "Tarefas");
+
+    migrationBuilder.DropTable(
+        name: "Pecas");
+
+    migrationBuilder.DropTable(
+        name: "Pedidos");
+
+    migrationBuilder.DropTable(
+        name: "Funcionarios");
+
+    migrationBuilder.DropTable(
+        name: "Estoque");
+}
+}
 </code>
-
-Este script deverá ser incluído em um arquivo .sql na pasta src\bd.
-
 
 
 
@@ -221,6 +342,6 @@ Apresente também uma figura explicando como as tecnologias estão relacionadas 
 | ---            | ---             |
 | SGBD           | MySQL           |
 | Front end      | HTML+CSS+JS     |
-| Back end       | Java SpringBoot |
+| Back end       | ASP.Net Core    |
 | Deploy         | Github Pages    |
 
