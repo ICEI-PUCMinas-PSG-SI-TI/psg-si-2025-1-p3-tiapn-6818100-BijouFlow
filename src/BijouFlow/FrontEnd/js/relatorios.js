@@ -2,7 +2,8 @@
     const dataInicial = document.getElementById("dataInicial").value;
     const dataFinal = document.getElementById("dataFinal").value;
 
-    if (!dataInicial  !dataFinal) {
+    if (!dataInicial || !dataFinal) 
+        {
         alert("Preencha as datas corretamente.");
         return;
     }
@@ -13,7 +14,7 @@
     };
 
     try {
-        const response = await fetch("http://localhost:5182/Relatorio", {
+        const response = await fetch("http://localhost:5182/bijouflow/Relatorio", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"

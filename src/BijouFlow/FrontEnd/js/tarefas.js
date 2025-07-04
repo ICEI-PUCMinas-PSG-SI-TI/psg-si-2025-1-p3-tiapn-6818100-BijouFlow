@@ -14,7 +14,7 @@
     };
 
     try {
-        const response = await fetch("http://localhost:5182/Tarefa");
+        const response = await fetch("http://localhost:5182/bijouflow/Tarefa");
 
         if (!response.ok) {
             throw new Error("Erro ao buscar tarefas.");
@@ -26,11 +26,11 @@
             const card = document.createElement("div");
             card.classList.add("kanban-card");
 
-            card.innerHTML = 
-                <p class="pedido-id">Pedido #${tarefas.pedidoId}</p>
-                <p class="data">Data: ${new Date(tarefas.dataAtribuicao).toLocaleDateString()}</p>
-                <p>${tarefas.descricao}</p>
-            ;
+            card.innerHTML = `
+                <p class="pedido-id">Pedido #${tarefa.pedidoId}</p>
+                <p class="data">Data: ${new Date(tarefa.dataAtribuicao).toLocaleDateString()}</p>
+                <p>${tarefa.descricao}</p>
+            `;
 
             const status = tarefa.status;
 

@@ -26,7 +26,7 @@
         formData.append("status", document.getElementById("pedidoStatus").value);
 
         try {
-            const response = await fetch("http://localhost:5182/Pedido", {
+            const response = await fetch("http://localhost:5182/bijouflow/Pedido", {
                 method: "POST",
                 body: formData
             });

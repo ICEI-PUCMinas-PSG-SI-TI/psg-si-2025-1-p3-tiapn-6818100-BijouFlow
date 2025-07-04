@@ -14,7 +14,7 @@
         const mes = document.getElementById("mesNasc").value.padStart(2, '0');
         const ano = document.getElementById("anoNasc").value;
 
-        const dataNascimento = ${ano}-${mes}-${dia};
+        const dataNascimento = '${ano}-${mes}-${dia}';
 
         const formData = new FormData();
         formData.append("nome", nome);
@@ -25,7 +25,7 @@
         formData.append("dataNascimento", dataNascimento); // ISO format
 
         try {
-            const response = await fetch("http://localhost:5182//Funcionario", {
+            const response = await fetch("http://localhost:5182/Funcionario", {
                 method: "POST",
                 body: formData
             });

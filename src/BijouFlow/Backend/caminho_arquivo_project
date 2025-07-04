@@ -1,0 +1,17 @@
+Warning: 50 - Using an in-memory repository. Keys will not be persisted to storage.
+Warning: 59 - Neither user profile nor HKLM registry available. Using an ephemeral key repository. Protected data will be unavailable when application exits.
+Warning: 35 - No XML encryptor configured. Key {66db267f-838d-4d24-b589-3a2f3e238a47} may be persisted to storage in unencrypted form.
+Critical: 6 - Application startup exception
+Error: 11 - Hosting failed to start
+Warning: 50 - Using an in-memory repository. Keys will not be persisted to storage.
+Warning: 59 - Neither user profile nor HKLM registry available. Using an ephemeral key repository. Protected data will be unavailable when application exits.
+Warning: 35 - No XML encryptor configured. Key {7bee4bea-c7ba-4ab1-8008-35482b495c95} may be persisted to storage in unencrypted form.
+Critical: 6 - Application startup exception
+Error: 11 - Hosting failed to start
+Information: 0 - Application started. Press Ctrl+C to shut down.
+Information: 0 - Hosting environment: Production
+Information: 0 - Content root path: C:\Users\Pichau\Desktop\FACULDADE HUGO IMPORTANTE\TIAW 3 - 2025\psg-si-2025-1-p3-tiapn-6818100-BijouFlow\src\BijouFlow\Backend
+Warning: 3 - Failed to determine the https port for redirect.
+Information: 20101 - Executed DbCommand (10ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT `c`.`ClienteId`, `c`.`Cpf`, `c`.`DataCadastro`, `c`.`DataUpdate`, `c`.`Nome`, `c`.`Telefone`, `c`.`Bairro`, `c`.`Cep`, `c`.`Cidade`, `c`.`Estado`, `c`.`Logradouro`, `c`.`Numero`
+FROM `Clientes` AS `c`

@@ -18,7 +18,7 @@
         formData.append("imagemPeca", document.getElementById("imagemPeca").value);
 
         try {
-            const response = await fetch("http://localhost:5182/Peca", {
+            const response = await fetch("http://localhost:5182/bijouflow/Peca", {
                 method: "POST",
                 body: formData
             });
