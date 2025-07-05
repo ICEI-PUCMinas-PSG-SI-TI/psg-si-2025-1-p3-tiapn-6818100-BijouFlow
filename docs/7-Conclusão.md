@@ -1,5 +1,3 @@
 ## 7. Conclusão
 
-<span style="color:red">Pré-requisitos: <a href="6-Interface-Sistema.md"> Projeto da Solução</a></span>
-
-_Apresentem, aqui, a conclusão do trabalho, que deve conter uma síntese dos principais resultados obtidos com a melhoria dos processos, uma discussão das limitações da solução proposta e sugestões de novas linhas de estudo._
+A implementação do projeto BijouFlow resultou em uma otimização significativa dos processos produtivos, centralizando a gestão de tarefas e pedidos em uma plataforma integrada que oferece visibilidade em tempo real e suporte à decisão estratégica através de relatórios. Apesar do sucesso em atender aos requisitos centrais, a solução apresenta limitações, como a ausência de um portal para o cliente e de atualizações em tempo real, além de um sistema de autenticação e estoque ainda em seu estágio básico. Como sugestão para trabalhos futuros, recomenda-se o desenvolvimento de um portal do cliente, a integração de tecnologias para notificações instantâneas, a expansão do módulo de estoque com funcionalidades avançadas de inventário e o aprimoramento da segurança com recursos como recuperação de senha e autenticação de dois fatores.
