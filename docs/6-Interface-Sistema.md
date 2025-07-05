@@ -1,36 +1,47 @@
-
 # 6. Interface do Sistema
 
-<span style="color:red">Pré-requisitos: <a href="4-Projeto-Solucao.md"> Projeto da Solução</a></span>
+_Visão geral da interação do usuário com o sistema, por meio das telas desenvolvidas para o projeto BijouFlow._
 
-_Visão geral da interação do usuário por meio das telas do sistema. Apresente as principais interfaces da plataforma._
+## 6.1. Telas de Autenticação
 
-## 6.1. Tela principal do sistema
+Estas são as telas iniciais para acesso e registro no sistema, garantindo que apenas usuários autorizados possam interagir com as funcionalidades de gestão.
 
-_Descrição da tela principal do sistema._
+### 6.1.1. Tela de Login
 
-[`Tela principal do sistema`](images/)
+Permite que um funcionário ou gerente insira suas credenciais (e-mail e senha) para acessar o painel de controle do sistema. A tela oferece opções para "Continuar conectado" e um link para criar uma nova conta.
 
+![Tela de Login](assets/tela-login.png)
 
-## 6.2. Telas do processo 1
+### 6.2. Tela de Cadastro
 
-_Descrição da tela relativa à atividade 1._
+Nesta tela, um novo funcionário pode ser cadastrado no sistema. São solicitadas informações como nome, e-mail, senha, CPF e o cargo que irá ocupar, essencial para a atribuição de tarefas.
 
-[`Tela da atividade 1`](images/)
+![Tela de Cadastro](assets/tela-cadastro.png)
 
-_Descrição da tela relativa à atividade 2._
+## 6.3. Telas do Painel de Controle (Dashboard)
 
-[`Tela da atividade 2`](images/)
+Após a autenticação, o usuário é direcionado para o painel principal, que possui uma navegação lateral e uma área de conteúdo dinâmica, adaptada às suas permissões e tarefas.
 
+### 6.3. Página Inicial
 
-## 6.3. Telas do processo 2
+Esta é a tela de boas-vindas para usuários logados. Ela apresenta um resumo das atividades recentes, como tarefas visitadas, e um feed de atualizações da equipe. Também oferece acesso rápido à área de suporte.
 
-_Descrição da tela relativa à atividade 1._
+![Página Inicial](assets/dashboard-pagina-inicial.png)
 
-[`Tela da atividade 1`](images/)
+### 6.4. Tela de Tarefas (Meu Trabalho)
 
-_Descrição da tela relativa à atividade 2._
+Esta tela utiliza um quadro no estilo Kanban para organizar o fluxo de produção. As tarefas, associadas a pedidos, são movidas entre as colunas "Separação", "Montagem", "Concluído/Enviado" e "Aguardando Material", proporcionando uma visão clara do progresso de cada pedido.
 
-[`Tela da atividade 2`](images/)
+![Quadro de Tarefas](assets/dashboard-quadro-tarefas.png)
 
+### 6.5. Tela de Relatórios
 
+A tela de relatórios permite ao gerente filtrar dados por um período específico para gerar métricas de desempenho. Os resultados são exibidos em cards que resumem informações sobre tarefas, pedidos, materiais e clientes, auxiliando na tomada de decisões estratégicas.
+
+![Tela de Relatórios](assets/dashboard-relatorios.png)
+
+### 6.6. Tela de Cadastro de Pedidos
+
+Interface dedicada ao registro de novos pedidos. Ela é dividida em "Informações do Cliente" e "Informações do Pedido", permitindo a associação de um cliente a um novo pedido, a definição do tipo de envio, status e a adição de itens.
+
+![Cadastro de Pedidos](assets/dashboard-cadastro-pedidos.png)
